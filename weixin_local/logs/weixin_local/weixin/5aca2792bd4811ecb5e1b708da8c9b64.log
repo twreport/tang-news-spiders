@@ -1,0 +1,48 @@
+2022-06-06 14:20:28 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: weixin_local)
+2022-06-06 14:20:28 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-06-06 14:20:28 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-06-06 14:20:28 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'weixin_local',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/weixin_local/weixin/5aca2792bd4811ecb5e1b708da8c9b64.log',
+ 'NEWSPIDER_MODULE': 'weixin_local.spiders',
+ 'SPIDER_MODULES': ['weixin_local.spiders']}
+2022-06-06 14:20:28 [scrapy.extensions.telnet] INFO: Telnet Password: 4ef54471fa4d772a
+2022-06-06 14:20:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-06 14:20:28 [root] WARNING: ===================Weixin Ask Info============================
+2022-06-06 14:20:28 [root] WARNING: MzA3MTA1MDU3OA==
+2022-06-06 14:20:28 [root] WARNING: province
+2022-06-06 14:20:28 [root] WARNING: 动静贵州
+2022-06-06 14:20:28 [root] WARNING: ===================Weixin Ask Info End============================
+2022-06-06 14:20:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-06 14:20:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-06 14:20:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['weixin_local.pipelines.MongodbPipeline']
+2022-06-06 14:20:29 [scrapy.core.engine] INFO: Spider opened
+2022-06-06 14:20:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-06 14:20:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6036
+2022-06-06 14:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3MTA1MDU3OA==&scene=124&devicetype=android-23&version=28000334&lang=zh_CN&nettype=WIFI&a8scene=1&pass_ticket=7JA6ACHXojQUKeNPabIGrsDRp%2FFCDZ9GpeHWzrzUwgGwie0D3L8t1PgqyewAr9gU&wx_header=3> (referer: None)
+2022-06-06 14:20:29 [py.warnings] WARNING: /root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/scraper.py:149: UserWarning: The "WeixinSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+

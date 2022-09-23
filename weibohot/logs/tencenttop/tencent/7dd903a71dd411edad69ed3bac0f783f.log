@@ -1,0 +1,220 @@
+2022-08-17 10:30:28 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: tencenttop)
+2022-08-17 10:30:29 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 10:30:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 10:30:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'tencenttop',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/tencenttop/tencent/7dd903a71dd411edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'tencenttop.spiders',
+ 'SPIDER_MODULES': ['tencenttop.spiders']}
+2022-08-17 10:30:29 [scrapy.extensions.telnet] INFO: Telnet Password: 239b95ae496950f0
+2022-08-17 10:30:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 10:30:29 [root] WARNING: =================== Tencent News ====================
+2022-08-17 10:30:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 10:30:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 10:30:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['tencenttop.pipelines.MongodbPipeline', 'tencenttop.pipelines.SendCloudMsg']
+2022-08-17 10:30:30 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 10:30:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 10:30:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-08-17 10:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://r.inews.qq.com/gw/event/hot_ranking_list> (referer: None)
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174423697_870492/0',
+ 'readCount': 255913,
+ 'source': '环球时报热点',
+ 'status': 1,
+ 'text': '耿直哥近日，多家外媒报道称，德国自15日起，将向亚太地区派遣多架战机，参加代号为“疾速太平洋2022”的空中联合军演，在澳大利亚、新加坡参加国际军演，并到访日本和韩国。其中，德国《每日镜报》在关于此……',
+ 'title': '德国否认战机要“穿越台湾海峡”？他们的用词很微妙',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816A09N9F00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173773156_870492/0',
+ 'readCount': 384797,
+ 'source': '光明日报',
+ 'status': 1,
+ 'text': '文|马小龙110平方米的房子，到手却发现套内面积只有61平方米；购房时销售人员口头承诺的31%公摊面积，收房时却变成了46%……这种看起来非常离谱的事情，却真实地出现在了青岛市民李黎（化名）的现实生……',
+ 'title': '110平房子到手61平，光明日报：房屋公摊达46％，违背基本常识',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816A0AHN800?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172775703_870492/0',
+ 'readCount': 0,
+ 'source': '1站视频',
+ 'status': 1,
+ 'text': '东部战区发布MV《只待一声召唤》：用一腔热血，写下英雄的誓言！',
+ 'title': '东部战区发布MV《只待一声召唤》：用一腔热血，写下英雄的誓言！',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816V0585N00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174468419_870492/0',
+ 'readCount': 0,
+ 'source': '大象新闻',
+ 'status': 1,
+ 'text': '回顾劳荣枝法子英案件时间线：4年身负7条人命，隐匿酒吧兼职',
+ 'title': '回顾劳荣枝法子英案件时间线：4年身负7条人命，隐匿酒吧兼职',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220817V01G3K00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173771656_870492/0',
+ 'readCount': 0,
+ 'source': '财精鲜生',
+ 'status': 1,
+ 'text': '四川5天拉闸要损失多少GDP？',
+ 'title': '四川5天拉闸要损失多少GDP？',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816V0AI1X00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173084341_870492/0',
+ 'readCount': 0,
+ 'source': '星视频',
+ 'status': 1,
+ 'text': '女子举报被同居13年的局长玩弄感情，6年前曾为其打胎，纪委介入',
+ 'title': '女子举报被同居13年的局长玩弄感情，6年前曾为其打胎，纪委介入',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816V06VBN00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172899761_870492/0',
+ 'readCount': 256906,
+ 'source': '极目新闻',
+ 'status': 1,
+ 'text': '极目新闻记者 张皓 '
+         '李贤诚8月15日，一条“云南镇雄8孩父亲经济压力大给县委书记留言求助”消息在网上流传，官方在留言板回应称，该网友家有两处住房，面积有800平米，还有十余万的车，引发网友热议。16……',
+ 'title': '“8孩父亲”求助县委书记未果后发声：会尽力让孩子完成学业',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816A05M3W00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174325666_870492/0',
+ 'readCount': 142395,
+ 'source': '财联社',
+ 'status': 1,
+ 'text': '财联社8月17日讯（编辑 '
+         '史正丞）举世瞩目中驶离敖德萨港的乌克兰“恢复运粮第一船”，在经历半个多月的尴尬漂泊后，本周被卫星捕捉到出现在乌克兰断交国的港口。需要说明的是，在2月底俄乌冲突爆发后，乌克兰……',
+ 'title': '被“嫌弃”的乌克兰粮食：高调离港后颠沛流离 现身断交国港口',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220817A009UQ00?#'}
+2022-08-17 10:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174432252_870492/0',
+ 'readCount': 15241,
+ 'source': '澎湃新闻',
+ 'status': 1,
+ 'text': '8月17日，特斯拉CEO马斯克在推特发文称，将收购英超俱乐部曼联。昔日的英超豪门曼联目前开赛两连败，是整整30年来第一次排名英超垫底。曼联的老板是美国格雷泽家族。',
+ 'title': '马斯克推特发文称要收购英超俱乐部曼联 确定不是开个玩笑？',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220817A01A9P00?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703430,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174317172_870492/0',
+ 'readCount': 0,
+ 'source': '点时新闻',
+ 'status': 1,
+ 'text': '店主遇女孩衣衫不整进店帮穿衣 当事人：同为女性很心疼',
+ 'title': '店主遇女孩衣衫不整进店帮穿衣，当事人：同为女性很心疼',
+ 'update_time': 1660703430,
+ 'url': 'https://view.inews.qq.com/a/20220816V05V8F00?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703431,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172728632_870492/0',
+ 'readCount': 176081,
+ 'source': '中国新闻周刊',
+ 'status': 1,
+ 'text': '中国-尼泊尔喜马拉雅跨境“天路”计划，有了最新进展。8月11日，中国外交部发言人汪文斌在例行记者会上确认，中尼（泊尔）外长在会谈当中，一致表示将构建跨喜马拉雅立体互联互通网络。在与尼泊尔外长卡德加会……',
+ 'title': '穿越喜马拉雅山！全球最难施工的铁路要来了',
+ 'update_time': 1660703431,
+ 'url': 'https://view.inews.qq.com/a/20220816A04LOK00?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703431,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174392278_870492/0',
+ 'readCount': 5533,
+ 'source': '成都商报红星新闻',
+ 'status': 1,
+ 'text': '据中国海事局网站消息，威海海事局发布航行警告，8月17日8时30分至8月19日17时，黄海部分海域将开展军事活动，禁止驶入。 '
+         '来源：@央视军事',
+ 'title': '航行警告！黄海海域有军事活动',
+ 'update_time': 1660703431,
+ 'url': 'https://view.inews.qq.com/a/20220817A013GZ00?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703431,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174488749_870492/0',
+ 'readCount': 61273,
+ 'source': '人民日报健康客户端',
+ 'status': 1,
+ 'text': '四川乐山市第四人民医院从2021年7月医院关闭至今，该院职工曾经连续几个月没有基本工资和交纳社保的情况，且一年来对下一步医院人员的分流未有确切消息。8月15日下午，健康时报致电四川乐山市卫健委，对方……',
+ 'title': '四川乐山一公立医院倒闭？当地卫健委：正商讨后续方案',
+ 'update_time': 1660703431,
+ 'url': 'https://view.inews.qq.com/a/20220816A07CG000?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703431,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173788630_870492/0',
+ 'readCount': 188007,
+ 'source': '南方周末',
+ 'status': 1,
+ 'text': '2021年5月31日，湖北武汉，人们带着孩子在社区广场玩耍。（人民视觉/图）2022年8月8日，浙江省温州龙湾区政府官网更新了一条信息，称龙湾区正在酝酿给“二孩家庭”每孩每月发放500元育儿补贴金，……',
+ 'title': '多地“发钱”鼓励三孩：黑龙江小城政策上线1月，11个家庭符合条件',
+ 'update_time': 1660703431,
+ 'url': 'https://view.inews.qq.com/a/20220816A0ANT800?#'}
+2022-08-17 10:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660703431,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173676002_870492/0',
+ 'readCount': 29825,
+ 'source': '新华社新闻',
+ 'status': 1,
+ 'text': '新华社武汉8月16日电（记者李思远、田中全）水利部长江水利委员会16日发布调度令，调度三峡水库于当日12时起向长江中下游补水。初步测算，三峡水库加大下泄，未来5天将为长江中下游补水约5亿立方米。长江……',
+ 'title': '三峡水库加大下泄向长江中下游补水',
+ 'update_time': 1660703431,
+ 'url': 'https://view.inews.qq.com/a/20220816A0A3G400?#'}
+2022-08-17 10:30:31 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 10:30:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 239,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15210,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.951665,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 2, 30, 31, 144296),
+ 'httpcompression/response_bytes': 69963,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 15,
+ 'log_count/DEBUG': 16,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 68235264,
+ 'memusage/startup': 68235264,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 8, 17, 2, 30, 30, 192631)}
+2022-08-17 10:30:31 [scrapy.core.engine] INFO: Spider closed (finished)

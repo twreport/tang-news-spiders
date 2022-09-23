@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+tencenttop/__init__.py
+tencenttop/items.py
+tencenttop/middlewares.py
+tencenttop/pipelines.py
+tencenttop/settings.py
+tencenttop/spiders/__init__.py
+tencenttop/spiders/tencent.py

@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+weixin_log/__init__.py
+weixin_log/items.py
+weixin_log/middlewares.py
+weixin_log/pipelines.py
+weixin_log/settings.py
+weixin_log/spiders/__init__.py
+weixin_log/spiders/weixin.py

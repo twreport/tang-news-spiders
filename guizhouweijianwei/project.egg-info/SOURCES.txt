@@ -1,0 +1,13 @@
+setup.py
+guizhouweijianwei/__init__.py
+guizhouweijianwei/items.py
+guizhouweijianwei/middlewares.py
+guizhouweijianwei/pipelines.py
+guizhouweijianwei/settings.py
+guizhouweijianwei/spiders/__init__.py
+guizhouweijianwei/spiders/weijianwei.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

@@ -1,0 +1,257 @@
+2022-05-08 17:02:35 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: dizhensubao)
+2022-05-08 17:02:35 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1056-raspi-aarch64-with-glibc2.17
+2022-05-08 17:02:35 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-05-08 17:02:35 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'dizhensubao',
+ 'DOWNLOAD_DELAY': 5,
+ 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage',
+ 'LOG_FILE': 'logs/dizhensubao/dizhen/8ebd8579cead11ecb5e1b708da8c9b64.log',
+ 'NEWSPIDER_MODULE': 'dizhensubao.spiders',
+ 'SPIDER_MODULES': ['dizhensubao.spiders']}
+2022-05-08 17:02:35 [scrapy.extensions.telnet] INFO: Telnet Password: b3f555ac4c64aa7a
+2022-05-08 17:02:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-05-08 17:02:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'dizhensubao.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-05-08 17:02:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-05-08 17:02:35 [py.warnings] WARNING: /root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/project.py:81: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  warnings.warn(
+
+2022-05-08 17:02:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['dizhensubao.pipelines.DuplicatesPipeline',
+ 'dizhensubao.pipelines.MySQLPipeline',
+ 'dizhensubao.pipelines.SendWeixinMsg']
+2022-05-08 17:02:35 [scrapy.core.engine] INFO: Spider opened
+2022-05-08 17:02:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-05-08 17:02:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-05-08 17:02:35 [py.warnings] WARNING: /root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy_splash/request.py:42: ScrapyDeprecationWarning: Call to deprecated function to_native_str. Use to_unicode instead.
+  url = to_native_str(url)
+
+2022-05-08 17:02:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://m.weibo.cn/u/1904228041 via http://10.168.1.100:8050/execute> (referer: None)
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '2022-05-08 16:02',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月08日15时55分在河北张家口市怀安县（北纬40.54度，东经114.57度）发生2.8级地震，震源深度10千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '2022-05-08 16:02',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月08日15时55分在河北张家口市怀安县（北纬40.54度，东经114.57度）发生2.8级地震，震源深度10千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '2022-05-08 11:02',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震微科普# 地震来了该怎么办？在不同场景下有不同的应对方法……戳视频↓让我们一起了解更多防震减灾知识#第14个全国防灾减灾日# '
+         '中国地震台网速报的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '2022-05-08 11:02',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震微科普# 地震来了该怎么办？在不同场景下有不同的应对方法……戳视频↓让我们一起了解更多防震减灾知识#第14个全国防灾减灾日# '
+         '中国地震台网速报的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '2022-05-07 23:53',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#2分钟暖心动画送给所有妈妈#祝福所有母亲，母亲节快乐！ 人民日报的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '2022-05-07 23:53',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#2分钟暖心动画送给所有妈妈#祝福所有母亲，母亲节快乐！ 人民日报的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '2022-05-07 12:14',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月07日19时53分在琉球群岛（北纬27.05度，东经126.55度）发生5.4级地震，震源深度20千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '2022-05-07 12:14',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月07日19时53分在琉球群岛（北纬27.05度，东经126.55度）发生5.4级地震，震源深度20千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '2022-05-07 09:53',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#第14个全国防灾减灾日#即将来临，防灾减灾这样做！你知道#全国防灾减灾日#是哪天吗？你知道今年全国防灾减灾日的主题是什么吗？这样做！从源头上守护美丽家园，提升全社会风险防范能力~让风险防范意识真正融入到每个人心中重点已划，转发收藏↓↓ '
+         '#2022年全国防灾减灾日# ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '2022-05-07 09:53',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#第14个全国防灾减灾日#即将来临，防灾减灾这样做！你知道#全国防灾减灾日#是哪天吗？你知道今年全国防灾减灾日的主题是什么吗？这样做！从源头上守护美丽家园，提升全社会风险防范能力~让风险防范意识真正融入到每个人心中重点已划，转发收藏↓↓ '
+         '#2022年全国防灾减灾日# ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '5-7 04:25',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '今年5月12日是我国#第14个全国防灾减灾日#。我国是世界上自然灾害最为严重的国家之一，灾害种类多、分布地域广、发生频率高、造成损失重。地震、火灾、洪水、泥石流……自然灾害随时可能发生，及时自救互救才更有生存希望。戳视频，2分钟get实用防灾减灾知识↓↓ '
+         '应急管理部的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '5-7 04:25',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '今年5月12日是我国#第14个全国防灾减灾日#。我国是世界上自然灾害最为严重的国家之一，灾害种类多、分布地域广、发生频率高、造成损失重。地震、火灾、洪水、泥石流……自然灾害随时可能发生，及时自救互救才更有生存希望。戳视频，2分钟get实用防灾减灾知识↓↓ '
+         '应急管理部的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '5-6 04:30',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '《防范化解灾害风险 '
+         '筑牢安全发展基础》灾害来临时，冷静应对、懂得自救、及时互救，可以将损失尽量降至最低。多一点防范意识，多一些应急知识，就多一分生命保障。让我们联起手来，共同防范化解灾害风险，筑牢安全发展基础。#第14个全国防灾减灾日#应急管理部的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '5-6 04:30',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '《防范化解灾害风险 '
+         '筑牢安全发展基础》灾害来临时，冷静应对、懂得自救、及时互救，可以将损失尽量降至最低。多一点防范意识，多一些应急知识，就多一分生命保障。让我们联起手来，共同防范化解灾害风险，筑牢安全发展基础。#第14个全国防灾减灾日#应急管理部的微博视频 ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '5-5 23:57',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '怀揣梦想，大步向前，时间会看见你的坚持和努力。早安。  ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '5-5 23:57',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '怀揣梦想，大步向前，时间会看见你的坚持和努力。早安。  ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '5-5 21:21',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月06日05时10分在云南大理州洱源县（北纬26.05度，东经99.88度）发生3.4级地震，震源深度8千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '5-5 21:21',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网正式测定：05月06日05时10分在云南大理州洱源县（北纬26.05度，东经99.88度）发生3.4级地震，震源深度8千米。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'add_time': 1652000558,
+ 'issue_date': '5-5 21:12',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网自动测定：05月06日05时10分在云南大理州洱源县附近（北纬26.00度，东经99.85度）发生3.5级左右地震，最终结果以正式速报为准。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+{'add_time': 1652000558,
+ 'issue_date': '5-5 21:12',
+ 'key_words': '',
+ 'locations': '',
+ 'status': 0,
+ 'text': '#地震快讯#中国地震台网自动测定：05月06日05时10分在云南大理州洱源县附近（北纬26.00度，东经99.85度）发生3.5级左右地震，最终结果以正式速报为准。（ '
+         '@中国地震台网 ） ',
+ 'title': '地震快讯',
+ 'url': 'https://m.weibo.cn/u/1904228041'}
+2022-05-08 17:02:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-05-08 17:02:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 900,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 64970,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 3.077574,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 5, 8, 9, 2, 38, 830793),
+ 'item_dropped_count': 10,
+ 'item_dropped_reasons_count/DropItem': 10,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 12,
+ 'memusage/max': 110641152,
+ 'memusage/startup': 110641152,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'splash/execute/request_count': 1,
+ 'splash/execute/response_count/200': 1,
+ 'start_time': datetime.datetime(2022, 5, 8, 9, 2, 35, 753219)}
+2022-05-08 17:02:38 [scrapy.core.engine] INFO: Spider closed (finished)

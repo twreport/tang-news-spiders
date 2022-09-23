@@ -1,0 +1,349 @@
+2022-08-17 10:50:12 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: weibohot)
+2022-08-17 10:50:12 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 10:50:12 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 10:50:13 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'weibohot',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/weibohot/weibo/49192d1e1dd711edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'weibohot.spiders',
+ 'SPIDER_MODULES': ['weibohot.spiders']}
+2022-08-17 10:50:13 [scrapy.extensions.telnet] INFO: Telnet Password: 2ebbbfeac5f8ea07
+2022-08-17 10:50:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 10:50:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'weibohot.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 10:50:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 10:50:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['weibohot.pipelines.MongodbPipeline', 'weibohot.pipelines.SendCloudMsg']
+2022-08-17 10:50:14 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 10:50:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 10:50:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-08-17 10:50:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion> (referer: None)
+2022-08-17 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E29%E5%B2%81%E5%B0%8F%E4%BC%99%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C%E7%99%BB%E4%B8%8A%E4%B8%96%E7%95%8C%E9%A1%B6%E7%BA%A7%E5%AD%A6%E6%9C%AF%E6%9C%9F%E5%88%8A> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:24 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E29%E5%B2%81%E5%B0%8F%E4%BC%99%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C%E7%99%BB%E4%B8%8A%E4%B8%96%E7%95%8C%E9%A1%B6%E7%BA%A7%E5%AD%A6%E6%9C%AF%E6%9C%9F%E5%88%8A>
+{'add_time': 1660704623,
+ 'author': '天眼新闻',
+ 'history': [],
+ 'hot_num': 6035,
+ 'text': '【#贵州29岁小伙研究成果登上世界顶级学术期刊# '
+         '】创新是第一动力，人才是第一资源，青年科研人员是科技创新的生力军。29岁的青年科研学者徐沛雨，贵州省兴义市人，毕业于贵州省兴义中学，他聚焦快乐神经递质，探索生命奥秘，研究成果登上多个世界顶级学术期刊。详情戳 '
+         'http://t.cn/A6SbFFGE ',
+ 'title': '贵州29岁小伙研究成果登上世界顶级学术期刊'}
+2022-08-17 10:50:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%BA%E4%BD%95%E4%B8%8D%E7%88%B1%E9%80%9B%E5%AE%9C%E5%AE%B6%E4%BA%86> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:29 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%BA%E4%BD%95%E4%B8%8D%E7%88%B1%E9%80%9B%E5%AE%9C%E5%AE%B6%E4%BA%86>
+{'add_time': 1660704627,
+ 'author': '头条新闻',
+ 'history': [],
+ 'hot_num': 6666,
+ 'text': '#年轻人为何不爱吃鸭脖了##年轻人为何不爱逛宜家了#来造个句子，年轻人为什么不_____？ ',
+ 'title': '年轻人为何不爱逛宜家了'}
+2022-08-17 10:50:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E7%93%AE%E5%AE%89%E5%AE%9E%E8%A1%8C%E4%B8%B4%E6%97%B6%E4%BA%A4%E9%80%9A%E7%AE%A1%E6%8E%A7> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:35 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E7%93%AE%E5%AE%89%E5%AE%9E%E8%A1%8C%E4%B8%B4%E6%97%B6%E4%BA%A4%E9%80%9A%E7%AE%A1%E6%8E%A7>
+{'add_time': 1660704634,
+ 'author': '贵阳新闻网',
+ 'history': [],
+ 'hot_num': 5924,
+ 'text': '#贵州瓮安实行临时交通管控# [话筒][话筒]',
+ 'title': '贵州瓮安实行临时交通管控'}
+2022-08-17 10:50:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B8%80%E6%8E%A5%E4%BA%B2%E7%8E%B0%E5%9C%BA%E7%A7%92%E5%8F%98%E7%94%9C%E8%9C%9C%E6%BC%94%E5%94%B1%E4%BC%9A> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:42 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B8%80%E6%8E%A5%E4%BA%B2%E7%8E%B0%E5%9C%BA%E7%A7%92%E5%8F%98%E7%94%9C%E8%9C%9C%E6%BC%94%E5%94%B1%E4%BC%9A>
+{'add_time': 1660704641,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5938,
+ 'text': '【#贵州一接亲现场秒变甜蜜演唱会# '
+         '喜庆、文明引人夸赞！】近日，贵州独山一接亲现场秒变甜蜜演唱会，全场一起大合唱。这样的结婚气氛引网友夸赞：“文明婚嫁，开心又幸福！”  '
+         'http://t.cn/A6Sb5OA3 ',
+ 'title': '贵州一接亲现场秒变甜蜜演唱会'}
+2022-08-17 10:50:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D1834%E7%B1%B3%E8%B7%A8%E6%B1%9F%E5%A4%A7%E6%A1%A5%E9%9C%87%E6%92%BC%E5%90%88%E9%BE%99> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:46 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D1834%E7%B1%B3%E8%B7%A8%E6%B1%9F%E5%A4%A7%E6%A1%A5%E9%9C%87%E6%92%BC%E5%90%88%E9%BE%99>
+{'add_time': 1660704645,
+ 'author': '新华社',
+ 'history': [{'hot_num': 5943, 'update_time': 1660704645}],
+ 'hot_num': 5943,
+ 'text': '【#1834米跨江大桥震撼合龙#】近日，由中交一公局承建的德余高速乌江特大桥顺利合龙。德余高速乌江特大桥位于贵州省思南、石阡、凤冈三县交界处，是德江至余庆高速公路的重要控制性工程，大桥全长1834米，主桥为504米上承式钢管混凝土拱桥。网友：#基建狂魔又上新了#！（记者：陶亮）   ',
+ 'title': '1834米跨江大桥震撼合龙'}
+2022-08-17 10:50:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B9%8C%E8%92%99%E5%A4%A7%E8%8D%89%E5%8E%9F%E6%99%AF%E5%8C%BA%E5%AE%9E%E8%A1%8C%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:50 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B9%8C%E8%92%99%E5%A4%A7%E8%8D%89%E5%8E%9F%E6%99%AF%E5%8C%BA%E5%AE%9E%E8%A1%8C%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6>
+{'add_time': 1660704649,
+ 'author': '天眼新闻',
+ 'history': [],
+ 'hot_num': 5854,
+ 'text': '#贵州乌蒙大草原景区实行交通管制#\xa0'
+         '盘州市旅游产业化发展中心发布《关于乌蒙大草原景区实行单向行驶交通管制的公告》，由于乌蒙大草原景区道路较窄，弯急坡陡，为确保交通不发生堵塞，景区决定2022 '
+         '年 8月 16日到2022 年8 月 31日期间实行交通管制，每天从9:00 到16:30 设立单行线路：所有进入景区车辆 ',
+ 'title': '贵州乌蒙大草原景区实行交通管制'}
+2022-08-17 10:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%A9%E8%80%83%E4%B8%8A%E6%B8%85%E5%8D%8E%E6%8D%90%E7%BB%99%E6%AF%8D%E6%A0%A130%E4%B8%87%E4%BD%99%E5%85%83> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:50:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:50:57 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%A9%E8%80%83%E4%B8%8A%E6%B8%85%E5%8D%8E%E6%8D%90%E7%BB%99%E6%AF%8D%E6%A0%A130%E4%B8%87%E4%BD%99%E5%85%83>
+{'add_time': 1660704656,
+ 'author': '小莉帮忙',
+ 'history': [],
+ 'hot_num': 5877,
+ 'text': '【#男孩考上清华捐给母校30万余元#】贵州，高考生王秀钱，收到了清华的录取通知书，得到了当地企业的资助，总共40万元，他拿出了生活费，剩下的三十多万，全部捐给了母校。#蓝V视界# '
+         'http://t.cn/A6SbbTGc ',
+ 'title': '男孩考上清华捐给母校30万余元'}
+2022-08-17 10:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%8F%91%E5%B8%83%E5%85%B3%E4%BA%8E%E8%87%AA%E8%A7%89%E5%81%9A%E5%A5%BD%E4%B8%89%E5%A4%A9%E4%B8%A4%E6%A3%80%E7%AE%A1%E7%90%86%E7%9A%84%E6%8F%90%E7%A4%BA> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:02 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%8F%91%E5%B8%83%E5%85%B3%E4%BA%8E%E8%87%AA%E8%A7%89%E5%81%9A%E5%A5%BD%E4%B8%89%E5%A4%A9%E4%B8%A4%E6%A3%80%E7%AE%A1%E7%90%86%E7%9A%84%E6%8F%90%E7%A4%BA>
+{'add_time': 1660704661,
+ 'author': '',
+ 'history': [],
+ 'hot_num': 5907,
+ 'text': '【贵州发布关于自觉做好“三天两检”管理的提示】#红城发布# （来源:贵州卫生健康委员会） ',
+ 'title': '贵州发布关于自觉做好三天两检管理的提示'}
+2022-08-17 10:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E8%BF%99%E5%8D%81%E5%B9%B4> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:07 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E8%BF%99%E5%8D%81%E5%B9%B4>
+{'add_time': 1660704666,
+ 'author': '贵州日报官微',
+ 'history': [],
+ 'hot_num': 5725,
+ 'text': '【名列前茅！#贵阳上半年空气质量排名全国第6#】8月16日，记者从“中国缩影·贵州这十年”主题新闻发布会贵阳专场获悉，今年上半年，贵阳市空气质量优良率达到历史新高100%。在全国168重点城市中排名第6、在省会城市中排名第3。贵阳市大力实施大生态战略行动，以建设全国生态文明示范城市为目标，坚决 ',
+ 'title': '贵阳这十年'}
+2022-08-17 10:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E6%91%86%E6%91%8A%E7%AF%AE%E7%90%83%E5%B0%91%E5%B9%B4%E8%BF%9B%E8%AE%AD%E7%BB%83%E8%90%A5%E5%95%A6> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:13 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E6%91%86%E6%91%8A%E7%AF%AE%E7%90%83%E5%B0%91%E5%B9%B4%E8%BF%9B%E8%AE%AD%E7%BB%83%E8%90%A5%E5%95%A6>
+{'add_time': 1660704672,
+ 'author': '天眼新闻',
+ 'history': [],
+ 'hot_num': 5747,
+ 'text': '【#贵州摆摊篮球少年进训练营啦# '
+         '】今年7月，北控男篮主教练马布里邀请贵州小伙儿石学念参加马布里篮球训练营，8月13日，贵州“摆摊篮球少年”石学念前往北京参加了马布里篮球训练营，成为训练营首位成员。而趁着此次训练的机会，石学念与哥哥还带着父母一起去完成他们的心愿——去天安门广场看升旗 ',
+ 'title': '贵州摆摊篮球少年进训练营啦'}
+2022-08-17 10:51:14 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 11 pages/min), scraped 10 items (at 10 items/min)
+2022-08-17 10:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E9%A6%96%E6%89%B9%E8%B4%B5%E5%B7%9E%E6%BB%9E%E7%95%99%E6%B5%B7%E5%8D%97%E6%97%85%E5%AE%A2%E9%A1%BA%E5%88%A9%E4%BB%8E%E4%B8%89%E4%BA%9A%E8%BF%94%E7%A8%8B> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:19 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E9%A6%96%E6%89%B9%E8%B4%B5%E5%B7%9E%E6%BB%9E%E7%95%99%E6%B5%B7%E5%8D%97%E6%97%85%E5%AE%A2%E9%A1%BA%E5%88%A9%E4%BB%8E%E4%B8%89%E4%BA%9A%E8%BF%94%E7%A8%8B>
+{'add_time': 1660704678,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5792,
+ 'text': '【#首批贵州滞留海南旅客顺利从三亚返程#】8月13日，是海口美兰国际机场全面恢复国内客运航班常态化运行首日。当日晚间，海航航空旗下天津航空紧急调配3架运力，分别保障海口-武汉、三亚-昆明、三亚-贵阳共计442名滞留旅客离岛返程。8月14日凌晨2:15左右，随着GS7001航班顺利降落在贵阳龙洞堡机场，1 ',
+ 'title': '首批贵州滞留海南旅客顺利从三亚返程'}
+2022-08-17 10:51:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E6%B6%88%E9%98%B2%E5%91%9840%E5%BA%A6%E5%A4%A9%E6%91%983%E9%A9%AC%E8%9C%82%E7%AA%9D%E6%B1%97%E5%A6%82%E9%9B%A8%E4%B8%8B> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:25 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E6%B6%88%E9%98%B2%E5%91%9840%E5%BA%A6%E5%A4%A9%E6%91%983%E9%A9%AC%E8%9C%82%E7%AA%9D%E6%B1%97%E5%A6%82%E9%9B%A8%E4%B8%8B>
+{'add_time': 1660704684,
+ 'author': '中国消防',
+ 'history': [],
+ 'hot_num': 5720,
+ 'text': '【#消防员40度天摘3马蜂窝汗如雨下#】近日，贵州玉屏，村民家门口一排树上，连着坐落了三个马蜂窝，村民无奈报警。40度高温天气，消防员全副武装赶赴，化身清蜂侠三上三下，终于将扰人马蜂悉数除尽。除蜂结束，蓝朋友早已浑身湿透，眼睛热得通红，防护服里的汗水都可以直接倒出来了。ps：哪管酷暑寒冬 ',
+ 'title': '消防员40度天摘3马蜂窝汗如雨下'}
+2022-08-17 10:51:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E9%87%91%E7%89%8C%E6%A6%9C%E5%92%8C%E5%A5%96%E7%89%8C%E6%A6%9C%E5%9D%87%E5%90%8D%E5%88%97%E7%AC%AC%E4%B8%80> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:30 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E9%87%91%E7%89%8C%E6%A6%9C%E5%92%8C%E5%A5%96%E7%89%8C%E6%A6%9C%E5%9D%87%E5%90%8D%E5%88%97%E7%AC%AC%E4%B8%80>
+{'add_time': 1660704689,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5702,
+ 'text': '【159金！#贵阳金牌榜和奖牌榜均名列第一# 】贵州省第十一届运动会正如火如荼地举行。截至8月15日，贵阳代表团斩获 159 金 107 '
+         '银 126 铜占据金牌榜、奖牌榜榜首。#直击2022贵州省运会# '
+         '据悉，本届贵州省运会是历届贵州省运会中规格最高、规模最大的一届综合性体育盛会。竞技体育组设置 24 个大项 56 ',
+ 'title': '贵阳金牌榜和奖牌榜均名列第一'}
+2022-08-17 10:51:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E6%96%B0%E5%A2%9E11%E6%89%80%E5%B8%82%E7%BA%A7%E7%A4%BA%E8%8C%83%E5%B9%BC%E5%84%BF%E5%9B%AD> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:37 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E6%96%B0%E5%A2%9E11%E6%89%80%E5%B8%82%E7%BA%A7%E7%A4%BA%E8%8C%83%E5%B9%BC%E5%84%BF%E5%9B%AD>
+{'add_time': 1660704696,
+ 'author': '贵州日报官微',
+ 'history': [],
+ 'hot_num': 5714,
+ 'text': '#多彩贵州# '
+         '【#贵阳新增11所市级示范幼儿园#】据了解，为进一步加强示范园辐射引领作用，不断提升贵阳市优质学前教育资源，6月20日至24日，贵阳市教育局组织幼教专家对21所幼儿园完成示范评估工作，近日公布了2022年上半年示范园评估及复查结果。#贵阳身边事#其中，11所（含2所专项复评）幼儿园通过 ',
+ 'title': '贵阳新增11所市级示范幼儿园'}
+2022-08-17 10:51:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%85%AB%E6%97%AC%E6%8A%A4%E6%B0%B4%E9%98%BF%E5%A9%8638%E5%B9%B4%E5%B7%A1%E6%B2%B3%E8%AE%B0> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:43 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%85%AB%E6%97%AC%E6%8A%A4%E6%B0%B4%E9%98%BF%E5%A9%8638%E5%B9%B4%E5%B7%A1%E6%B2%B3%E8%AE%B0>
+{'add_time': 1660704703,
+ 'author': '贵州日报官微',
+ 'history': [],
+ 'hot_num': 5699,
+ 'text': '【#贵州八旬护水阿婆38年巡河记#】视频里这位满头银发的“阿婆”名叫雷月琴，今年已经85岁高龄了，是贵州省贵阳市的一位“巡河”志愿者。在当地，不少市民都认识她，因为她“巡河”一干就是38年，大家亲切地称她为“护水阿婆”。38年来，她“巡”遍了贵阳市大大小小的水源地。为什么叫“巡河”？因为她 ',
+ 'title': '贵州八旬护水阿婆38年巡河记'}
+2022-08-17 10:51:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E5%87%8F%E9%80%9F%E5%B8%A6%E5%88%86%E4%BA%86%E9%97%A8%E6%B4%BE> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:47 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E5%87%8F%E9%80%9F%E5%B8%A6%E5%88%86%E4%BA%86%E9%97%A8%E6%B4%BE>
+{'add_time': 1660704706,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5377,
+ 'text': '【万万没想到！#贵阳减速带分了门派#】在日常行车过程中，行车道上的减速带很常见，不知道您有没有注意到，在贵阳不同的路段可能会遇到不一样的减速带。它们有什么区别？今天，我们就来盘点一下。过减速带是每个开车人经常遇到的行车状态，既然要过减速带，那就要用正确的姿势过。什么样的姿势正确呢 ',
+ 'title': '贵阳减速带分了门派'}
+2022-08-17 10:51:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E7%E6%9C%88%E4%BE%9D%E6%B3%95%E6%9F%A5%E5%A4%8447%E5%AE%B6%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E7%BD%91%E7%AB%99> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:53 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E7%E6%9C%88%E4%BE%9D%E6%B3%95%E6%9F%A5%E5%A4%8447%E5%AE%B6%E8%BF%9D%E6%B3%95%E8%BF%9D%E8%A7%84%E7%BD%91%E7%AB%99>
+{'add_time': 1660704712,
+ 'author': '贵州日报官微',
+ 'history': [],
+ 'hot_num': 5126,
+ 'text': '【贵州7月依法查处违法违规网站47家】 '
+         '2022年7月，贵州持续开展“清朗”系列专项行动，纵深推进“黔净”网络空间清朗工程，集中整治群众反映强烈、内容导向偏差的网络生态乱象，依法查处网上各类违法违规行为。贵州网信系统自主巡查和受理举报违法和不良信息1163条，排查涉违法违规APP13个，会同公安、 ',
+ 'title': '贵州7月依法查处47家违法违规网站'}
+2022-08-17 10:51:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%90%AF%E5%8A%A8%E6%B0%94%E8%B1%A1%E7%81%BE%E5%AE%B3%E5%B9%B2%E6%97%B1%E2%85%A3%E7%BA%A7%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:51:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:51:58 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:51:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%90%AF%E5%8A%A8%E6%B0%94%E8%B1%A1%E7%81%BE%E5%AE%B3%E5%B9%B2%E6%97%B1%E2%85%A3%E7%BA%A7%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94>
+{'add_time': 1660704717,
+ 'author': '天眼新闻',
+ 'history': [],
+ 'hot_num': 5142,
+ 'text': '【贵州启动气象灾害（干旱）Ⅳ级应急响应】#聚焦贵州#记者从贵州省气象局获悉，8月16日贵州省气象局启动气象灾害(干旱) '
+         'Ⅳ级应急响应。据贵州省气候中心统计，7月中旬以来，贵州全省平均降水量136.3毫米，较常年同期相比，偏少27.5%，贵州全省大部地区降水量为正常至偏少两成以上，其中毕节市中东部 ',
+ 'title': '贵州启动气象灾害干旱Ⅳ级应急响应'}
+2022-08-17 10:52:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E4%B9%8C%E6%B1%9F%E7%89%B9%E5%A4%A7%E6%A1%A5%E5%88%B7%E6%96%B0%E4%B8%96%E7%95%8C%E7%BA%A7%E6%96%B0%E8%B7%A8%E5%BA%A6> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:05 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E4%B9%8C%E6%B1%9F%E7%89%B9%E5%A4%A7%E6%A1%A5%E5%88%B7%E6%96%B0%E4%B8%96%E7%95%8C%E7%BA%A7%E6%96%B0%E8%B7%A8%E5%BA%A6>
+{'add_time': 1660704724,
+ 'author': '铜仁发布',
+ 'history': [],
+ 'hot_num': 5168,
+ 'text': '【#乌江特大桥刷新世界级新跨度#】8月15日，随着最后一块合龙段包板焊接完成，位于遵义市凤冈县、铜仁市思南县和石阡县三地交界处的德余高速乌江特大桥主拱顺利实现合龙。乌江特大桥由中交一公局集团投资建设，全长1834米，主桥跨度504米，是目前世界最大跨径的上承式钢管混凝土拱桥。大桥采用国内首 ',
+ 'title': '乌江特大桥刷新世界级新跨度'}
+2022-08-17 10:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%B2%91%E5%B7%A9%E4%B8%87%E4%BA%A9%E6%9D%82%E4%BA%A4%E6%B0%B4%E7%A8%BB%E5%BC%80%E9%95%B0> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:11 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E5%B2%91%E5%B7%A9%E4%B8%87%E4%BA%A9%E6%9D%82%E4%BA%A4%E6%B0%B4%E7%A8%BB%E5%BC%80%E9%95%B0>
+{'add_time': 1660704730,
+ 'author': '贵州日报官微',
+ 'history': [],
+ 'hot_num': 5216,
+ 'text': '【#贵州岑巩万亩杂交水稻开镰# '
+         '】黔东南自治州岑巩县是贵州省唯一的国家级水稻制种大县，今年落实杂交水稻制种面积3.55万亩。时下，正是杂交水稻制种开镰收割的关键时节，稻农们正在抢抓农时，利用机械化作业提高水稻收割效率，确保稻谷“颗粒归仓”。今年全县预计生产水稻种子780万公斤，可带动11个乡 ',
+ 'title': '贵州岑巩万亩杂交水稻开镰'}
+2022-08-17 10:52:14 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 10 pages/min), scraped 20 items (at 10 items/min)
+2022-08-17 10:52:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B8%A4%E5%85%84%E5%BC%9F%E9%A9%AE%E8%B5%B7%E7%88%B6%E6%AF%8D%E7%9C%8B%E5%8D%87%E6%97%97> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:18 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%B7%9E%E4%B8%A4%E5%85%84%E5%BC%9F%E9%A9%AE%E8%B5%B7%E7%88%B6%E6%AF%8D%E7%9C%8B%E5%8D%87%E6%97%97>
+{'add_time': 1660704736,
+ 'author': '小莉帮忙',
+ 'history': [],
+ 'hot_num': 5278,
+ 'text': '【#贵州两兄弟驮起父母看升旗#】近日，贵州兄弟俩的父亲是一名退伍军人，看升旗是父亲一直以来的愿望，升旗开始前弟弟帮父亲整理了衣服，赶到现场没有站到前排位置，哥哥把妈妈扛在了肩上，弟弟也把爸爸扛起来了，兄弟俩就这样驮着父母，让他们能够清楚看到升旗仪式，国歌响起老兵父亲庄严敬礼，坚定的 ',
+ 'title': '贵州两兄弟驮起父母看升旗'}
+2022-08-17 10:52:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%9B%B8%E5%85%B3%E9%83%A8%E9%97%A8%E5%9B%9E%E5%BA%94%E6%9C%89%E5%B8%82%E6%B0%91%E5%9C%A8%E9%98%BF%E5%93%88%E6%B0%B4%E5%BA%93%E5%9E%82%E9%92%93> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:22 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%9B%B8%E5%85%B3%E9%83%A8%E9%97%A8%E5%9B%9E%E5%BA%94%E6%9C%89%E5%B8%82%E6%B0%91%E5%9C%A8%E9%98%BF%E5%93%88%E6%B0%B4%E5%BA%93%E5%9E%82%E9%92%93>
+{'add_time': 1660704741,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5308,
+ 'text': '【#相关部门回应有市民在阿哈水库垂钓# '
+         '加强巡查！严厉打击！】近日，有市民反映贵阳阿哈水库一处围挡被破坏，有人沿岸钓鱼、烧烤，污染湖区环境。记者赶赴现场看到，沿岸、水流交汇处、当地村民摆渡用码头随处可见“禁止垂钓、游玩”的醒目标语。围挡破损处已封锁，尚未修缮。执法大队工作人员告诉记 ',
+ 'title': '相关部门回应有市民在阿哈水库垂钓'}
+2022-08-17 10:52:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E5%9C%A8%E8%B4%B7%E6%AC%BE%E5%85%AC%E5%8F%B8%E8%B4%B7%E6%AC%BE%E7%AB%9F%E8%83%8C%E4%B8%8A8%E5%AE%B6%E7%BD%91%E8%B4%B7> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:29 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E5%9C%A8%E8%B4%B7%E6%AC%BE%E5%85%AC%E5%8F%B8%E8%B4%B7%E6%AC%BE%E7%AB%9F%E8%83%8C%E4%B8%8A8%E5%AE%B6%E7%BD%91%E8%B4%B7>
+{'add_time': 1660704748,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5350,
+ 'text': '【#男子在贷款公司贷款竟背上8家网贷# '
+         '：说好的正规银行放款呢？】贵阳的陈先生这段时间急需资金周转，于是他找了一家公司，想通过这家公司帮忙贷款20到30万元。借款前工作人员告诉陈先生，资金会从正规银行放款。可陈先生一查征信才发现，贷款公司帮他贷的是网贷，而且还涉及到了8家不同的网贷公司。 ',
+ 'title': '男子在贷款公司贷款竟背上8家网贷'}
+2022-08-17 10:52:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E5%8C%97%E7%AB%99%E5%86%8D%E5%A2%9E8%E8%B6%9F%E7%9F%AD%E9%80%94%E5%8A%A8%E8%BD%A6> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:34 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E9%98%B3%E5%8C%97%E7%AB%99%E5%86%8D%E5%A2%9E8%E8%B6%9F%E7%9F%AD%E9%80%94%E5%8A%A8%E8%BD%A6>
+{'add_time': 1660704753,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5379,
+ 'text': '【贵阳北往返遵义和铜仁#贵阳北站再增8趟短途动车#】记者从贵州铁路获悉，8月16日至 8月21日，贵阳北往返遵义和铜仁阶段性增开 8 '
+         '趟省内短途动车组列车，及时输送暑运客流，方便广大旅客畅游 " 爽爽贵阳 " 和 " 多彩贵州 "。据了解，此次增开的这 8 '
+         '趟列车，增开时段均为 8 月 16 日至 21 日。其中， ',
+ 'title': '贵阳北站再增8趟短途动车'}
+2022-08-17 10:52:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D6%E6%97%AC%E8%80%81%E4%BA%BA%E5%81%9C%E8%BD%A6%E7%AD%89%E5%BE%85%E5%8C%BA%E6%8C%A8%E8%BD%A6%E6%8E%A8%E9%94%80%E8%94%AC%E8%8F%9C> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:40 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D6%E6%97%AC%E8%80%81%E4%BA%BA%E5%81%9C%E8%BD%A6%E7%AD%89%E5%BE%85%E5%8C%BA%E6%8C%A8%E8%BD%A6%E6%8E%A8%E9%94%80%E8%94%AC%E8%8F%9C>
+{'add_time': 1660704758,
+ 'author': '散拾视频',
+ 'history': [],
+ 'hot_num': 5477,
+ 'text': '【#6旬老人停车等待区挨车推销蔬菜# '
+         '拍摄者：心情复杂，再去一趟看能否遇到她[失望]】8月14日，贵州贵阳。一6旬老奶奶在停车等待区向车辆挨个推销蔬菜。拍摄者王先生表示当时自己在等红绿灯遇到老奶奶推销蔬菜，比较突然自己没有带现金于是拒绝，等大家都走了她依然在等待。@散拾视频   ',
+ 'title': '6旬老人停车等待区挨车推销蔬菜'}
+2022-08-17 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%8C%BB%E9%99%84%E9%99%A2%E8%A1%80%E5%8F%8B%E7%97%85MDT%E5%BC%80%E8%AF%8A> (referer: https://api.weibo.cn/2/page?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Dregion)
+2022-08-17 10:52:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.tangwei.cc:443
+2022-08-17 10:52:46 [urllib3.connectionpool] DEBUG: https://www.tangwei.cc:443 "POST /api/receive_weibohot HTTP/1.1" 200 4
+2022-08-17 10:52:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25Py8CXDeRxGedP6FYV-SfIyzuIHXVqwVNfrDV6PUJbkdAKLUfgkWpNXCzTk4jueNeAPSQ1toQzKFChL__tnPte&from=10C7093010&c=iphone&s=2C32767A&containerid=100103type%3D1%26q%3D%E8%B4%B5%E5%8C%BB%E9%99%84%E9%99%A2%E8%A1%80%E5%8F%8B%E7%97%85MDT%E5%BC%80%E8%AF%8A>
+{'add_time': 1660704765,
+ 'author': '百姓关注',
+ 'history': [],
+ 'hot_num': 5543,
+ 'text': '【#贵医附院血友病MDT开诊# '
+         '患者就医问题一站式解决】8月16日，贵州医科大学附属医院血友病MDT正式开诊，来自骨科、血液科、儿童血液科和疼痛科的专家们现场问诊，为患者提供全方位的诊疗服务。血友病作为一种罕见的遗传性疾病，其诊断和管理均十分复杂。对血友病患者，尤其是重度血友病患者来说，所 ',
+ 'title': '贵医附院血友病MDT开诊'}
+2022-08-17 10:52:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 10:52:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 23468,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 561637,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'elapsed_time_seconds': 151.279315,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 2, 52, 46, 126343),
+ 'httpcompression/response_bytes': 4761295,
+ 'httpcompression/response_count': 27,
+ 'item_scraped_count': 26,
+ 'log_count/DEBUG': 105,
+ 'log_count/INFO': 12,
+ 'memusage/max': 78315520,
+ 'memusage/startup': 70017024,
+ 'request_depth_max': 1,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2022, 8, 17, 2, 50, 14, 847028)}
+2022-08-17 10:52:46 [scrapy.core.engine] INFO: Spider closed (finished)

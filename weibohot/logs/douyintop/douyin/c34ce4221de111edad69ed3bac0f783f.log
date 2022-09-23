@@ -1,0 +1,463 @@
+2022-08-17 12:05:12 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: douyintop)
+2022-08-17 12:05:12 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 12:05:12 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 12:05:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'douyintop',
+ 'LOG_FILE': 'logs/douyintop/douyin/c34ce4221de111edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'douyintop.spiders',
+ 'SPIDER_MODULES': ['douyintop.spiders']}
+2022-08-17 12:05:12 [scrapy.extensions.telnet] INFO: Telnet Password: 2517b29c33c31e6d
+2022-08-17 12:05:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 12:05:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 12:05:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 12:05:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['douyintop.pipelines.MongodbPipeline', 'douyintop.pipelines.SendCloudMsg']
+2022-08-17 12:05:14 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 12:05:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 12:05:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-08-17 12:05:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://aweme.snssdk.com/aweme/v1/hot/search/list/> (referer: None)
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660699340,
+ 'history': [],
+ 'hot_value': 10296639,
+ 'is_local': 0,
+ 'position': 1,
+ 'word': '31省区市新增566+2322'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660657990,
+ 'history': [{'hot_num': 10136790, 'update_time': 1660709115}],
+ 'hot_value': 10136790,
+ 'is_local': 0,
+ 'position': 2,
+ 'word': 'LOL非活跃账号将被删除'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660657600,
+ 'history': [],
+ 'hot_value': 10085232,
+ 'is_local': 0,
+ 'position': 3,
+ 'word': '全年粮食丰收有支撑'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660693742,
+ 'history': [],
+ 'hot_value': 10073535,
+ 'is_local': 0,
+ 'position': 4,
+ 'word': '多所高校发布延迟开学通知'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660706384,
+ 'history': [{'hot_num': 9916229, 'update_time': 1660709115}],
+ 'hot_value': 9916229,
+ 'is_local': 0,
+ 'position': 5,
+ 'word': '吕一老公钱泳辰被曝骗学费'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660642599,
+ 'history': [],
+ 'hot_value': 9797198,
+ 'is_local': 0,
+ 'position': 6,
+ 'word': '抖音联手百家媒体辟谣319万条'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660638424,
+ 'history': [],
+ 'hot_value': 9676813,
+ 'is_local': 0,
+ 'position': 7,
+ 'word': '牺牲消防员没吃上最后一顿饭'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660691007,
+ 'history': [],
+ 'hot_value': 9670298,
+ 'is_local': 0,
+ 'position': 8,
+ 'word': '三亚新增380+791'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660650111,
+ 'history': [],
+ 'hot_value': 9668687,
+ 'is_local': 0,
+ 'position': 9,
+ 'word': '官方回应重庆嘉陵江被晒干'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660705578,
+ 'history': [],
+ 'hot_value': 9600116,
+ 'is_local': 0,
+ 'position': 10,
+ 'word': '东部4省要完成财政上缴任务'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660698781,
+ 'history': [],
+ 'hot_value': 9309147,
+ 'is_local': 0,
+ 'position': 11,
+ 'word': '孩子高铁吵闹乘客提醒反被怼'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660705775,
+ 'history': [{'hot_num': 9290242, 'update_time': 1660709115}],
+ 'hot_value': 9290242,
+ 'is_local': 0,
+ 'position': 12,
+ 'word': '卫健委谈阻碍生育首要因素'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660653984,
+ 'history': [],
+ 'hot_value': 9275693,
+ 'is_local': 0,
+ 'position': 13,
+ 'word': '沉香如屑修罗王预告'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660650917,
+ 'history': [],
+ 'hot_value': 9210525,
+ 'is_local': 0,
+ 'position': 14,
+ 'word': '第二次拥抱大结局'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660706465,
+ 'history': [{'hot_num': 9137361, 'update_time': 1660709115}],
+ 'hot_value': 9137361,
+ 'is_local': 0,
+ 'position': 15,
+ 'word': '成都多个写字楼因高温限电'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660653111,
+ 'history': [],
+ 'hot_value': 9108604,
+ 'is_local': 0,
+ 'position': 16,
+ 'word': '美试射民兵3洲际导弹'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660649614,
+ 'history': [],
+ 'hot_value': 9043526,
+ 'is_local': 0,
+ 'position': 17,
+ 'word': '国家电网最大限度支援川渝'}
+2022-08-17 12:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660699901,
+ 'history': [{'hot_num': 8866626, 'update_time': 1660709115}],
+ 'hot_value': 8866626,
+ 'is_local': 0,
+ 'position': 18,
+ 'word': '女子商场试戒指戴上就跑'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709115,
+ 'event_time': 1660649359,
+ 'history': [],
+ 'hot_value': 8838614,
+ 'is_local': 0,
+ 'position': 19,
+ 'word': '当田姥姥吃脏脏包'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660650848,
+ 'history': [],
+ 'hot_value': 8671217,
+ 'is_local': 0,
+ 'position': 20,
+ 'word': '女子扮大仙骗钱被抓'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660630875,
+ 'history': [],
+ 'hot_value': 8655187,
+ 'is_local': 0,
+ 'position': 21,
+ 'word': '连反驳的机会都不给'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660644803,
+ 'history': [],
+ 'hot_value': 8646042,
+ 'is_local': 0,
+ 'position': 22,
+ 'word': '普京就佩洛西窜台表态'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660638759,
+ 'history': [],
+ 'hot_value': 8568549,
+ 'is_local': 0,
+ 'position': 23,
+ 'word': '林志颖顺利完成颜面手术'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660701138,
+ 'history': [],
+ 'hot_value': 8417309,
+ 'is_local': 0,
+ 'position': 24,
+ 'word': '多部门鼓励毕业生到基层'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660643711,
+ 'history': [],
+ 'hot_value': 8399269,
+ 'is_local': 0,
+ 'position': 25,
+ 'word': 'BLACKPINK将参加VMA'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660641369,
+ 'history': [],
+ 'hot_value': 8325497,
+ 'is_local': 0,
+ 'position': 26,
+ 'word': 'Dopa宣布停播'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660656236,
+ 'history': [],
+ 'hot_value': 8286555,
+ 'is_local': 0,
+ 'position': 27,
+ 'word': '苏州成功实施人工增雨'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660643914,
+ 'history': [],
+ 'hot_value': 8226107,
+ 'is_local': 0,
+ 'position': 28,
+ 'word': '店主帮衣衫破碎女孩穿衣'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660648959,
+ 'history': [],
+ 'hot_value': 8114936,
+ 'is_local': 0,
+ 'position': 29,
+ 'word': '父母整理万惠文遗物泣不成声'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660643691,
+ 'history': [],
+ 'hot_value': 7966427,
+ 'is_local': 0,
+ 'position': 30,
+ 'word': '西安疫情感染源尚不明确'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660628815,
+ 'history': [],
+ 'hot_value': 7914428,
+ 'is_local': 0,
+ 'position': 31,
+ 'word': '苍兰诀F4男团'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660646726,
+ 'history': [],
+ 'hot_value': 7863409,
+ 'is_local': 0,
+ 'position': 32,
+ 'word': '彭州幸存游客被骂活该'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660641534,
+ 'history': [],
+ 'hot_value': 7700320,
+ 'is_local': 0,
+ 'position': 33,
+ 'word': '男子被困礁石用摩斯码求救'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660624592,
+ 'history': [],
+ 'hot_value': 7699331,
+ 'is_local': 0,
+ 'position': 34,
+ 'word': '山西将发售四亿元政府债券'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660623148,
+ 'history': [],
+ 'hot_value': 7672687,
+ 'is_local': 0,
+ 'position': 35,
+ 'word': '苹果iOS 16 beta6发布'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660694417,
+ 'history': [],
+ 'hot_value': 7541025,
+ 'is_local': 0,
+ 'position': 36,
+ 'word': '上海新增本土无症状4例'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660699537,
+ 'history': [{'hot_num': 7459630, 'update_time': 1660709116}],
+ 'hot_value': 7459630,
+ 'is_local': 0,
+ 'position': 37,
+ 'word': '陕西本土新增6+10'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660622801,
+ 'history': [],
+ 'hot_value': 7429912,
+ 'is_local': 0,
+ 'position': 38,
+ 'word': '苍兰诀王鹤棣跳女团舞'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660691078,
+ 'history': [],
+ 'hot_value': 7402424,
+ 'is_local': 0,
+ 'position': 39,
+ 'word': '乌鲁木齐新增无症状87例'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660695227,
+ 'history': [],
+ 'hot_value': 7387030,
+ 'is_local': 0,
+ 'position': 40,
+ 'word': '武汉心心念念的雨来了'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660628491,
+ 'history': [],
+ 'hot_value': 7309725,
+ 'is_local': 0,
+ 'position': 41,
+ 'word': '棣欣引力'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660641640,
+ 'history': [],
+ 'hot_value': 7307660,
+ 'is_local': 0,
+ 'position': 42,
+ 'word': '西安新增3个高风险区'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660628984,
+ 'history': [],
+ 'hot_value': 7298284,
+ 'is_local': 0,
+ 'position': 43,
+ 'word': '警方悬赏2万抓这名75岁老人'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660696671,
+ 'history': [],
+ 'hot_value': 7223007,
+ 'is_local': 0,
+ 'position': 44,
+ 'word': '重庆新增3例本土无症状'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660694383,
+ 'history': [],
+ 'hot_value': 7171769,
+ 'is_local': 0,
+ 'position': 45,
+ 'word': '西安新增4个高风险区'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660650485,
+ 'history': [],
+ 'hot_value': 7146505,
+ 'is_local': 0,
+ 'position': 46,
+ 'word': '起底新列入台独清单的7人'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660699225,
+ 'history': [{'hot_num': 7137094, 'update_time': 1660709116}],
+ 'hot_value': 7137094,
+ 'is_local': 0,
+ 'position': 47,
+ 'word': '浙江新增本土阳性36例'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660692477,
+ 'history': [],
+ 'hot_value': 7092922,
+ 'is_local': 0,
+ 'position': 48,
+ 'word': '云南新增本土1+4'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660656575,
+ 'history': [],
+ 'hot_value': 7056345,
+ 'is_local': 0,
+ 'position': 49,
+ 'word': '三峡水库加大向长江中下游补水'}
+2022-08-17 12:05:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://aweme.snssdk.com/aweme/v1/hot/search/list/>
+{'add_time': 1660709116,
+ 'event_time': 1660617278,
+ 'history': [],
+ 'hot_value': 7047978,
+ 'is_local': 0,
+ 'position': 50,
+ 'word': '抖音共创来了'}
+2022-08-17 12:05:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 12:05:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 311,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 14937,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.855594,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 4, 5, 16, 727948),
+ 'httpcompression/response_bytes': 56761,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 51,
+ 'log_count/INFO': 10,
+ 'memusage/max': 70139904,
+ 'memusage/startup': 70139904,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 8, 17, 4, 5, 14, 872354)}
+2022-08-17 12:05:16 [scrapy.core.engine] INFO: Spider closed (finished)

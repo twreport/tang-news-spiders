@@ -1,0 +1,199 @@
+2022-08-17 10:00:28 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: tencenttop)
+2022-08-17 10:00:28 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 10:00:28 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 10:00:28 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'tencenttop',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/tencenttop/tencent/4cf879501dd011edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'tencenttop.spiders',
+ 'SPIDER_MODULES': ['tencenttop.spiders']}
+2022-08-17 10:00:28 [scrapy.extensions.telnet] INFO: Telnet Password: 667562bef19cc126
+2022-08-17 10:00:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 10:00:28 [root] WARNING: =================== Tencent News ====================
+2022-08-17 10:00:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 10:00:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 10:00:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['tencenttop.pipelines.MongodbPipeline', 'tencenttop.pipelines.SendCloudMsg']
+2022-08-17 10:00:29 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 10:00:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 10:00:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-08-17 10:00:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://r.inews.qq.com/gw/event/hot_ranking_list> (referer: None)
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173773156_870492/0',
+ 'readCount': 378734,
+ 'source': '光明日报',
+ 'status': 1,
+ 'text': '文|马小龙110平方米的房子，到手却发现套内面积只有61平方米；购房时销售人员口头承诺的31%公摊面积，收房时却变成了46%……这种看起来非常离谱的事情，却真实地出现在了青岛市民李黎（化名）的现实生……',
+ 'title': '110平房子到手61平，光明日报：房屋公摊达46％，违背基本常识',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A0AHN800?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174423697_870492/0',
+ 'readCount': 245290,
+ 'source': '环球时报热点',
+ 'status': 1,
+ 'text': '耿直哥近日，多家外媒报道称，德国自15日起，将向亚太地区派遣多架战机，参加代号为“疾速太平洋2022”的空中联合军演，在澳大利亚、新加坡参加国际军演，并到访日本和韩国。其中，德国《每日镜报》在关于此……',
+ 'title': '德国否认战机要“穿越台湾海峡”？他们的用词很微妙',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A09N9F00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172775703_870492/0',
+ 'readCount': 0,
+ 'source': '1站视频',
+ 'status': 1,
+ 'text': '东部战区发布MV《只待一声召唤》：用一腔热血，写下英雄的誓言！',
+ 'title': '东部战区发布MV《只待一声召唤》：用一腔热血，写下英雄的誓言！',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816V0585N00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173771656_870492/0',
+ 'readCount': 0,
+ 'source': '财精鲜生',
+ 'status': 1,
+ 'text': '四川5天拉闸要损失多少GDP？',
+ 'title': '四川5天拉闸要损失多少GDP？',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816V0AI1X00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174392278_870492/0',
+ 'readCount': 4812,
+ 'source': '成都商报红星新闻',
+ 'status': 1,
+ 'text': '据中国海事局网站消息，威海海事局发布航行警告，8月17日8时30分至8月19日17时，黄海部分海域将开展军事活动，禁止驶入。 '
+         '来源：@央视军事',
+ 'title': '航行警告！黄海海域有军事活动',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220817A013GZ00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173788630_870492/0',
+ 'readCount': 185845,
+ 'source': '南方周末',
+ 'status': 1,
+ 'text': '2021年5月31日，湖北武汉，人们带着孩子在社区广场玩耍。（人民视觉/图）2022年8月8日，浙江省温州龙湾区政府官网更新了一条信息，称龙湾区正在酝酿给“二孩家庭”每孩每月发放500元育儿补贴金，……',
+ 'title': '多地“发钱”鼓励三孩：黑龙江小城政策上线1月，11个家庭符合条件',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A0ANT800?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172565758_870492/0',
+ 'readCount': 66984,
+ 'source': '中国经济周刊',
+ 'status': 1,
+ 'text': '中国经济周刊—经济网讯贾跃亭又找到钱了，能继续造车了。据媒体报道，8月15日晚，法拉第未来宣布新融资，称新的担保票据工具提供5200万美元（约3.5亿人民币）的承诺资金，并表示正与多个投资者积极商谈……',
+ 'title': '法拉第未来宣布3.5亿元新融资，网友：贾跃亭的车没见到，但钱不会断',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A02O6Z00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15173084341_870492/0',
+ 'readCount': 0,
+ 'source': '星视频',
+ 'status': 1,
+ 'text': '女子举报被同居13年的局长玩弄感情，6年前曾为其打胎，纪委介入',
+ 'title': '女子举报被同居13年的局长玩弄感情，6年前曾为其打胎，纪委介入',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816V06VBN00?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15172035441_870492/0',
+ 'readCount': 1286606,
+ 'source': '新华社新闻',
+ 'status': 1,
+ 'text': '新华社北京8月16日电中共中央台办发言人16日受权宣布对列入清单的一批“台独”顽固分子等人员实施制裁。发言人指出，“台独”分裂是祖国统一的最大障碍，是民族复兴的严重隐患。一段时期以来，少数“台独”顽……',
+ 'title': '中央台办受权宣布对列入清单的一批“台独”顽固分子等人员实施制裁',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A024X200?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://r.inews.qq.com/gw/event/hot_ranking_list>
+{'add_time': 1660701630,
+ 'img': 'http://inews.gtimg.com/newsapp_ls/0/15174488749_870492/0',
+ 'readCount': 48219,
+ 'source': '人民日报健康客户端',
+ 'status': 1,
+ 'text': '四川乐山市第四人民医院从2021年7月医院关闭至今，该院职工曾经连续几个月没有基本工资和交纳社保的情况，且一年来对下一步医院人员的分流未有确切消息。8月15日下午，健康时报致电四川乐山市卫健委，对方……',
+ 'title': '四川乐山一公立医院倒闭？当地卫健委：正商讨后续方案',
+ 'update_time': 1660701630,
+ 'url': 'https://view.inews.qq.com/a/20220816A07CG000?#'}
+2022-08-17 10:00:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://r.inews.qq.com/gw/event/hot_ranking_list> (referer: None)
+Traceback (most recent call last):
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/defer.py", line 120, in iter_errback
+    yield next(it)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/python.py", line 353, in __next__
+    return next(self.data)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/python.py", line 353, in __next__
+    return next(self.data)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/spidermiddlewares/referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/spidermiddlewares/urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "/tmp/tencenttop-1660637082-ga2d2jbd.egg/tencenttop/spiders/tencent.py", line 36, in parse
+    item['img'] = tencent_item['miniProShareImage']
+KeyError: 'miniProShareImage'
+2022-08-17 10:00:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 10:00:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 239,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 14961,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.903466,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 2, 0, 30, 387808),
+ 'httpcompression/response_bytes': 67038,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 11,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 68411392,
+ 'memusage/startup': 68411392,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2022, 8, 17, 2, 0, 29, 484342)}
+2022-08-17 10:00:30 [scrapy.core.engine] INFO: Spider closed (finished)

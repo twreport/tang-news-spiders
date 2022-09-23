@@ -1,0 +1,367 @@
+2022-08-17 09:40:17 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: neteasetop)
+2022-08-17 09:40:17 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 09:40:17 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 09:40:17 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'neteasetop',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/neteasetop/netease/81b756dc1dcd11edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'neteasetop.spiders',
+ 'SPIDER_MODULES': ['neteasetop.spiders']}
+2022-08-17 09:40:17 [scrapy.extensions.telnet] INFO: Telnet Password: 6d7696e5896ef5bd
+2022-08-17 09:40:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 09:40:17 [root] WARNING: =================== Netease News ====================
+2022-08-17 09:40:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 09:40:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 09:40:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['neteasetop.pipelines.MongodbPipeline', 'neteasetop.pipelines.SendCloudMsg']
+2022-08-17 09:40:18 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 09:40:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 09:40:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-08-17 09:40:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30> (referer: None)
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700418,
+ 'hotScore': 6000,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/04af40edp00rgp9h5003wc000k000a0c.png',
+ 'source': '澎湃新闻',
+ 'status': 1,
+ 'text': '11万养10个以上的娃，买奶粉够不?',
+ 'title': '俄罗斯总统普京签署命令 恢复“英雄母亲”称号',
+ 'update_time': 1660700418,
+ 'url': 'https://3g.163.com/news/article/HETH2E590001899N.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5799,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0817/6edf9eadj00rgq1gk00j7c003340223c.jpg',
+ 'source': '央视新闻客户端',
+ 'status': 1,
+ 'text': '除了旅游业 这次直接重创海南的水果产业',
+ 'title': '海南三亚新增380例确诊病例、791例无症状感染者 ',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUIFT84000189PS.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5678,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0817/32e6d127p00rgqeg1001jc000s600e3c.png',
+ 'source': '枢密院十号',
+ 'status': 1,
+ 'text': '第一个蔡英文的闺蜜，怎么长得跟男的似的？看着就不是个面善之人',
+ 'title': '"台独"顽固分子清单公布后 岛内网友跟帖火爆',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEV2PGA40001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5425,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/15d5add8p00rgph5t001yc000jg00czc.png',
+ 'source': '界面新闻',
+ 'status': 1,
+ 'text': '一个不负责任的超级帝国就是这样威胁全世界的。',
+ 'title': '美国军方：已例行试射“民兵3”洲际弹道导弹 展示“核力量准备情况”',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETQ4ERU0001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5158,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little11635123b9fj00rgpjr7000sd200hs0096g00hs0096.jpg',
+ 'source': '中国半导体论坛',
+ 'status': 1,
+ 'text': '如果不被制裁，麒麟9000的机器现在应该2000左右了吧',
+ 'title': '华为海思暴跌81.5%！',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETU4AH80511DT6P.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5143,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little3883de1b016j00rgpr0t003qd000zk01c9m.jpg',
+ 'source': '凡事一定有办法13119',
+ 'status': 1,
+ 'text': '炸机场只是震惊，更多的人还没跑，这次再炸火药库，观望的人醒过来了，离战场真不远了，开始跑了',
+ 'title': '克里米亚大桥24小时内汽车流量创纪录，俄罗斯人开始疯狂逃离',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEU7KJQ705530F42.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5065,
+ 'img': 'http://videoimg.ws.126.net/cover/20220816/bOpv8oqzE_cover.jpg',
+ 'source': '十点一分',
+ 'status': 1,
+ 'text': '',
+ 'title': '县领导讲话鼓励公务员带头购房：有一套的买两套，有两套的买三套',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/VJDVUFU7H.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 5005,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little8261a511f92j00rgq0nn001fc000hs00n5g.jpg',
+ 'source': '五包辣条',
+ 'status': 1,
+ 'text': '几套房子不是重点，重点是怎么把钱弄出去的',
+ 'title': '司马南在美国的另外两套房房产',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUJ0N6D0552BLRI.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4918,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/2f4272cdj00rgpmbi002kc000gn00b3c.jpg',
+ 'source': '财联社',
+ 'status': 1,
+ 'text': '老家是重庆的，家里的老人都说，很少见到嘉陵江这么干过',
+ 'title': '三峡水库加大下泄向长江中下游补水 ',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEU0TAOE0001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4647,
+ 'img': 'http://dingyue.ws.126.net/2022/0817/8b46b608j00rgqhdb000yd000g800c6p.jpg',
+ 'source': '可达鸭资讯',
+ 'status': 1,
+ 'text': '人家诽谤你，你为什么还要保留追究权利？',
+ 'title': '报道再次失实？大连一景区怒斥澎湃新闻，引万人点赞',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEV7LO5E0553A9YO.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4632,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0817/f4d9be65p00rgqeks001mc0009c0070c.png',
+ 'source': '网易体育',
+ 'status': 1,
+ 'text': '杜老二又开始了[大笑]',
+ 'title': '法国凌晨三点!杜兰特大街上运球 多人簇拥美女相伴',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEV47EET0005877U.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4531,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0817/7b146b42j00rgqfsx000oc000s600e3c.jpg',
+ 'source': '北京日报',
+ 'status': 1,
+ 'text': '看这几个的流调，为什么韩国和台湾的居多，都是同一架航班上的吗？',
+ 'title': '北京昨日新增本土"1+1" 新增境外输入"21+5"',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEV5GGTD0001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4517,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/big668ddd6b720j00rgpyf4001fc000hs00e8g.jpg',
+ 'source': '我叫会飞的骡子',
+ 'status': 1,
+ 'text': '',
+ 'title': '穿和服上街有罪，那使用日本词汇岂不是要坐牢？',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUG8C8S0552BJEX.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4442,
+ 'img': '',
+ 'source': '新京报',
+ 'status': 1,
+ 'text': '抱歉，我拖了政府的后腿了，九零的我还是个单身汉！',
+ 'title': '国家卫健委等17部门：进一步完善和落实积极生育支持措施',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETCH35G0001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 4157,
+ 'img': '',
+ 'source': '优品看台',
+ 'status': 1,
+ 'text': '',
+ 'title': '怎么这么多人洗白苏州和服事件',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUQ5A4S05348GIR.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3871,
+ 'img': '',
+ 'source': '七台河关注',
+ 'status': 1,
+ 'text': '特别是高速公路上的这种灯，遇到下雨天，那光线刺的你眼睛都睁不开，非常危险。',
+ 'title': '这是杀人灯，建议取消',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HET8C0LT0534C72H.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3847,
+ 'img': '',
+ 'source': '央视',
+ 'status': 1,
+ 'text': '',
+ 'title': '李克强主持召开经济大省政府负责人经济形势座谈会',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETQ5AV700259DLP.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3718,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0817/0c92ce4ap00rgqe5s001ac0009c0070c.png',
+ 'source': '网易体育',
+ 'status': 1,
+ 'text': '',
+ 'title': '索要离谱高薪!曼联与拉比奥谈崩 5000万挖皇马胖虎',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEV3OVCU00058781.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3671,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little66019c20832j00rgpfob00awd000j604g5m.jpg',
+ 'source': '生活幸运加速度',
+ 'status': 1,
+ 'text': '',
+ 'title': '别想了，唐山烧烤店打人案是不会出现死刑的',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETP3M7A0553B7RI.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3628,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little626fcdce51aj00rgp8fe00elc000z900n4g.jpg',
+ 'source': '海外网',
+ 'status': 1,
+ 'text': '天天这么炸，怎么玩的下去，乌克兰不讲武德。',
+ 'title': '克里米亚起火弹药储存点仍在爆炸 已有2人受伤',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETH09T70514R9L4.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3621,
+ 'img': '',
+ 'source': '无线徐州',
+ 'status': 1,
+ 'text': '',
+ 'title': '国内两地最新通告！常态化核酸检测将不再免费！',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUE50QS05149RPN.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3605,
+ 'img': 'http://dingyue.ws.126.net/2022/0816/334116c0j00rgpmxa00a8c000hs00akm.jpg',
+ 'source': '历史烟云',
+ 'status': 1,
+ 'text': '意思就是所有联网设备都在监控中？',
+ 'title': '2013年，国安局发现一iPad连续向境外发送数据，机主是一健身教练',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEU22DR30523CU4G.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3523,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little186bf599b4dj00rgpziw005yd200u000kvg00it00d2.jpg',
+ 'source': '泽平宏观',
+ 'status': 1,
+ 'text': '',
+ 'title': '出生人口大幅下降，加大鼓励生育力度：中国生育报告2022',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HEUHL9L00519NINF.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3498,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/859a37c2p00rgpd9h001kc0009c0070c.png',
+ 'source': '极目新闻',
+ 'status': 1,
+ 'text': '社会公平正义很重要，生那么多自己就要考虑能否负担的起，不是觉得困难了就要社会帮你养，其他人怎么帮？',
+ 'title': '“8孩父亲”求助县委书记未果后发声：会尽力让孩子完成学业 ',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETKP3BP0001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3474,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/big553b00349dfj00rgp2ys0026c000jg00cyg.jpg',
+ 'source': '优品看台',
+ 'status': 1,
+ 'text': '',
+ 'title': '香港与新加坡的差距扩大，2022年上半年印尼新加坡菲律宾马来西亚香港GDP状况',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HET9C8TC05348GIR.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3384,
+ 'img': 'http://bjnewsrec-cv.ws.126.net/little116bb2149b9j00rgpj7k000kd200dw0099g00it00ci.jpg',
+ 'source': '政知新媒体',
+ 'status': 1,
+ 'text': '法律就是不管你在天涯海角都把你抓回来伏法',
+ 'title': '持枪、监听手下！年近70岁的“赣南王”领刑，落马当晚市民放鞭炮庆祝',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETTEOSP051482MP.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3258,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/d757633cp00rgpeuw0018c0009c0070c.png',
+ 'source': '财联社',
+ 'status': 1,
+ 'text': '重庆这么热的天气，没有电该怎么过啊，我们自己平时也要注意节约用电，空调往上调一度',
+ 'title': '国家电网董事长：最大限度支援川渝地区电力供应 ',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETNLTH30001899O.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3218,
+ 'img': 'http://dingyue.ws.126.net/2022/0816/096bdffcj00rgp89k001md000hs00dcp.jpg',
+ 'source': '小松社会趣闻',
+ 'status': 1,
+ 'text': '这个坐是老弱病残，很多人平时应该没注意过，不建议坐这，否则真来时话不好说。',
+ 'title': '女孩拒绝让座被要求提供病历证明，大爷：臭外地的，不懂北京规矩',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HETFU922055216Q9.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3175,
+ 'img': 'http://cms-bucket.ws.126.net/2022/0816/e7751b33p00rgp2w6007ec0009c0070c.png',
+ 'source': '极目新闻',
+ 'status': 1,
+ 'text': '我是一个宠物医生 很多顾客给我备注狗医生 我说啥了[狗][狗][狗]',
+ 'title': '公司回应会员姓名被写成“畜生”：药房系统出错',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HET7VFMI0001899N.html'}
+2022-08-17 09:40:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://gw.m.163.com/gentie-web/api/v2/products/a2869674571f77b5a0867c3d71db5856/rankDocs/all/list?ibc=newsapph5&limit=30>
+{'add_time': 1660700419,
+ 'hotScore': 3156,
+ 'img': 'http://dingyue.ws.126.net/2022/0816/b2d04fc2j00rgp2920014c000ku00bqm.jpg',
+ 'source': '芦花深',
+ 'status': 1,
+ 'text': '',
+ 'title': '朝廷：洋人打来了，怎么遍地都是汉奸？百姓：跟着洋人才有钱赚',
+ 'update_time': 1660700419,
+ 'url': 'https://3g.163.com/news/article/HET8GAKD05521C4W.html'}
+2022-08-17 09:40:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 09:40:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 312,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 8425,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.351102,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 1, 40, 19, 715646),
+ 'httpcompression/response_bytes': 23554,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 68268032,
+ 'memusage/startup': 68268032,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 8, 17, 1, 40, 18, 364544)}
+2022-08-17 09:40:19 [scrapy.core.engine] INFO: Spider closed (finished)

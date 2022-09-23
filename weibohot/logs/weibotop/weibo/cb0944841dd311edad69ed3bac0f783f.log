@@ -1,0 +1,539 @@
+2022-08-17 10:25:13 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: weibotop)
+2022-08-17 10:25:14 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 10:25:14 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 10:25:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'weibotop',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/weibotop/weibo/cb0944841dd311edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'weibotop.spiders',
+ 'SPIDER_MODULES': ['weibotop.spiders']}
+2022-08-17 10:25:14 [scrapy.extensions.telnet] INFO: Telnet Password: f11f6e16d51a6e60
+2022-08-17 10:25:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 10:25:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'weibotop.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 10:25:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 10:25:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['weibotop.pipelines.MongodbPipeline', 'weibotop.pipelines.SendCloudMsg']
+2022-08-17 10:25:16 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 10:25:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 10:25:16 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-08-17 10:25:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot> (referer: None)
+2022-08-17 10:25:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A5%B3%E5%AD%90%E5%95%86%E5%9C%BA%E5%86%85%E8%AF%95%E6%88%B4%E6%88%92%E6%8C%87%E6%88%B4%E4%B8%8A%E5%B0%B1%E8%B7%91> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A5%B3%E5%AD%90%E5%95%86%E5%9C%BA%E5%86%85%E8%AF%95%E6%88%B4%E6%88%92%E6%8C%87%E6%88%B4%E4%B8%8A%E5%B0%B1%E8%B7%91>
+{'add_time': 1660703122,
+ 'history': [],
+ 'hot_num': 3445005,
+ 'is_local': 0,
+ 'text': '#女子商场内试戴戒指戴上就跑#【#女子试戴戒指趁店员不备扭头就跑#，被抓后坦言因为喜欢】近日，广东佛山。桂城某商场珠宝店内，一女子试戴戒指，趁店员不备，戴着戒指扭头就跑。半小时后被警方人赃并获。据嫌疑人卢某交代，当天下午在该商场闲逛时，看到店内的戒指非常漂亮，就到了店内试戴。但由于身 ',
+ 'title': '女子商场内试戴戒指戴上就跑'}
+2022-08-17 10:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%BA%E4%BD%95%E4%B8%8D%E7%88%B1%E5%90%83%E9%B8%AD%E8%84%96%E4%BA%86> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%B8%BA%E4%BD%95%E4%B8%8D%E7%88%B1%E5%90%83%E9%B8%AD%E8%84%96%E4%BA%86>
+{'add_time': 1660703128,
+ 'history': [],
+ 'hot_num': 2089115,
+ 'is_local': 0,
+ 'text': '#年轻人为何不爱吃鸭脖了##年轻人为何不爱逛宜家了#来造个句子，年轻人为什么不_____？ ',
+ 'title': '年轻人为何不爱吃鸭脖了'}
+2022-08-17 10:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BC%98%E9%85%B7%E5%90%A6%E8%AE%A4%E5%86%B0%E9%9B%A8%E7%81%AB%E6%95%B0%E6%8D%AE%E6%9C%89%E9%97%AE%E9%A2%98> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BC%98%E9%85%B7%E5%90%A6%E8%AE%A4%E5%86%B0%E9%9B%A8%E7%81%AB%E6%95%B0%E6%8D%AE%E6%9C%89%E9%97%AE%E9%A2%98>
+{'add_time': 1660703134,
+ 'history': [],
+ 'hot_num': 1556923,
+ 'is_local': 0,
+ 'text': '【#优酷否认冰雨火数据有问题#】近日，有网友在优酷官博下询问：“冰雨火数据是不是被偷了？”官博回复称“没有”，并配上相关数据截图。据悉，该剧微博开分8.6分，你看这部剧了吗？觉得这个分数合理吗？#陈晓王一博冰雨火微博评分8.6# ',
+ 'title': '优酷否认冰雨火数据有问题'}
+2022-08-17 10:25:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%89%93%E5%8D%A1%E4%B8%AD%E5%9B%BD> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%89%93%E5%8D%A1%E4%B8%AD%E5%9B%BD>
+{'add_time': 1660703140,
+ 'history': [],
+ 'hot_num': 1621156,
+ 'is_local': 0,
+ 'text': '#打卡中国# '
+         '8月16日，2022“打卡中国•最美地标——你好，山西！”网络国际传播活动正式启动。活动期间，外国网红将通过实地探访运城沿黄美丽乡村、临汾壶口瀑布、吕梁碛口古镇以及忻州偏关老牛湾等地，感受九曲黄河最壮丽的千里景色，见证黄河文化的保护与传承，用国际化视野、国际化表达，记录山西日 ',
+ 'title': '打卡中国'}
+2022-08-17 10:25:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%AD%A9%E5%AD%90%E9%AB%98%E9%93%81%E4%B8%8A%E5%90%B5%E9%97%B9%E4%B8%8D%E6%AD%A2%E4%B9%98%E5%AE%A2%E6%8F%90%E9%86%92%E8%A2%AB%E5%AE%B6%E9%95%BF%E6%80%BC> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%AD%A9%E5%AD%90%E9%AB%98%E9%93%81%E4%B8%8A%E5%90%B5%E9%97%B9%E4%B8%8D%E6%AD%A2%E4%B9%98%E5%AE%A2%E6%8F%90%E9%86%92%E8%A2%AB%E5%AE%B6%E9%95%BF%E6%80%BC>
+{'add_time': 1660703145,
+ 'history': [],
+ 'hot_num': 1208392,
+ 'is_local': 0,
+ 'text': '男孩乘地铁不慎将水壶打翻，妈妈细心指导孩子将水渍擦干。为这位妈妈的教育方式点赞！（中国青年报） #孩子高铁上吵闹不止乘客提醒被家长怼# '
+         'http://t.cn/A6SbDPzu ',
+ 'title': '孩子高铁上吵闹不止乘客提醒被家长怼'}
+2022-08-17 10:25:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BA%8C%E5%8D%81%E4%B8%8D%E6%83%912%E5%8E%9F%E7%8F%AD%E4%BA%BA%E9%A9%AC%E5%9B%9E%E5%BD%92> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BA%8C%E5%8D%81%E4%B8%8D%E6%83%912%E5%8E%9F%E7%8F%AD%E4%BA%BA%E9%A9%AC%E5%9B%9E%E5%BD%92>
+{'add_time': 1660703151,
+ 'history': [{'hot_num': 874946, 'update_time': 1660703151}],
+ 'hot_num': 874946,
+ 'is_local': 0,
+ 'text': '#二十不惑2开播# #关晓彤梁爽# 「追剧日历」[奋斗]@湖南卫视@爱奇艺@芒果TV ，每晚20:00，爽姐@关晓彤 上链接！🛎',
+ 'title': '二十不惑2原班人马回归'}
+2022-08-17 10:25:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E8%8A%B1400%E4%B9%B0%E6%BA%BA%E6%B0%B4%E7%BE%8A%E8%A2%AB%E7%BD%91%E5%8F%8B%E6%8C%87%E8%B4%A3> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E8%8A%B1400%E4%B9%B0%E6%BA%BA%E6%B0%B4%E7%BE%8A%E8%A2%AB%E7%BD%91%E5%8F%8B%E6%8C%87%E8%B4%A3>
+{'add_time': 1660703157,
+ 'history': [],
+ 'hot_num': 969418,
+ 'is_local': 0,
+ 'text': '【#男子花400买溺水羊被网友指责#：为什么不救羊？是否等羊死了低价购入】据@白鹿视频 '
+         '报道：近日，河南信阳。何先生和同伴钓鱼时看到一只羊掉进了水中，放羊的大爷非常着急。大伙就花400元买下了这只羊。网友看到后，反而指责何先生：为什么不救下这只羊？是不是故意等羊死了想低价买？对此，何先生表 ',
+ 'title': '男子花400买溺水羊被网友指责'}
+2022-08-17 10:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%84%E5%A4%9C%20%E5%81%9A%E6%88%91%E7%9A%84%E5%B8%9D%E5%90%8E%E5%90%A7> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%84%E5%A4%9C%20%E5%81%9A%E6%88%91%E7%9A%84%E5%B8%9D%E5%90%8E%E5%90%A7>
+{'add_time': 1660703164,
+ 'history': [],
+ 'hot_num': 1068559,
+ 'is_local': 0,
+ 'text': '#玄夜 '
+         '做我的帝后吧#《沉香重华》六界唯一的渣爹来了！成毅玄夜的父母爱情我可以炫一百集！！！！！！！“爱情与天下，我都不可能会放手”“别再执着了，做我的帝后吧！”我好像知道染青为什么执着了，因为可以一直循环渣爹追求染青谈恋爱的感觉，最初相识刚谈恋爱最美好嘛[苦涩][苦涩][苦涩] ',
+ 'title': '玄夜 做我的帝后吧'}
+2022-08-17 10:26:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%9C%9F%E8%80%B3%E5%85%B62%E5%B2%81%E5%A5%B3%E7%AB%A5%E9%81%AD%E8%9B%87%E5%92%AC%E5%90%8E%E5%92%AC%E6%AD%BB%E8%9B%87> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%9C%9F%E8%80%B3%E5%85%B62%E5%B2%81%E5%A5%B3%E7%AB%A5%E9%81%AD%E8%9B%87%E5%92%AC%E5%90%8E%E5%92%AC%E6%AD%BB%E8%9B%87>
+{'add_time': 1660703170,
+ 'history': [],
+ 'hot_num': 574406,
+ 'is_local': 0,
+ 'text': '【如何紧急处理蛇咬伤？】如若不慎被蛇咬伤，一定要使用正确安全的方式处理伤口，否则会加重身体受到的伤害。戳视频↓↓↓学习被蛇咬伤的应对措施！#土耳其2岁女童遭蛇咬后咬死蛇# '
+         'http://t.cn/A6caVdLP ',
+ 'title': '土耳其2岁女童遭蛇咬后咬死蛇'}
+2022-08-17 10:26:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8A%B3%E8%8D%A3%E6%9E%9D%E6%A1%88%E5%AE%B6%E5%B1%9E%E5%9B%9E%E5%BA%94> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8A%B3%E8%8D%A3%E6%9E%9D%E6%A1%88%E5%AE%B6%E5%B1%9E%E5%9B%9E%E5%BA%94>
+{'add_time': 1660703176,
+ 'history': [],
+ 'hot_num': 577819,
+ 'is_local': 0,
+ 'text': '【#劳荣枝案一审判决新增一起绑架案# 】#劳荣枝法子英一审供述多处不一致# '
+         '备受关注的劳荣枝案，二审将于8月18日上午9点半，在江西省高级人民法院开庭审理。劳荣枝案一审审理过程中，劳荣枝认为自己被法子英胁迫，起辅助作用，未和法子英事前共谋，她没有杀人的故意，不应构成故意杀人罪。一审法院南昌 ',
+ 'title': '劳荣枝案家属回应'}
+2022-08-17 10:26:16 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 11 pages/min), scraped 10 items (at 10 items/min)
+2022-08-17 10:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E5%8E%A8%E6%88%BF%E9%87%8C%E7%82%92%E8%8F%9C%E6%82%A3%E7%83%AD%E5%B0%84%E7%97%85%E4%BD%8F%E8%BF%9BICU> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%94%B7%E5%AD%90%E5%8E%A8%E6%88%BF%E9%87%8C%E7%82%92%E8%8F%9C%E6%82%A3%E7%83%AD%E5%B0%84%E7%97%85%E4%BD%8F%E8%BF%9BICU>
+{'add_time': 1660703184,
+ 'history': [],
+ 'hot_num': 708767,
+ 'is_local': 0,
+ 'text': '【#热射病病死率高达80%#】#不是只有在户外才会中暑# '
+         '中暑由轻到重，分为先兆中暑、轻症中暑和重症中暑。重症中暑又包括热痉挛、热衰竭和热射病，其中，热射病的病死率高达80%。环卫工人、快递员和建筑工人等户外工作人员，由于劳动后产热多，散热跟不上，容易发生中暑；老年人皮肤感觉迟钝，对体温不 ',
+ 'title': '男子厨房里炒菜患热射病住进ICU'}
+2022-08-17 10:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A4%9A%E5%AD%A9%E5%AE%B6%E5%BA%AD%E5%85%AC%E7%A7%AF%E9%87%91%E5%8F%AF%E6%8F%90%E9%AB%98%E9%A2%9D%E5%BA%A6> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A4%9A%E5%AD%A9%E5%AE%B6%E5%BA%AD%E5%85%AC%E7%A7%AF%E9%87%91%E5%8F%AF%E6%8F%90%E9%AB%98%E9%A2%9D%E5%BA%A6>
+{'add_time': 1660703188,
+ 'history': [],
+ 'hot_num': 549212,
+ 'is_local': 0,
+ 'text': '#多孩家庭可提高公积金额度# '
+         '【买房享优惠？17部门发声：多孩家庭挂钩住房，公积金可提高额度】“促进解决新市民、青年人等群体住房困难。”“住房政策向多子女家庭倾斜”“对购买首套自住住房的多子女家庭，有条件的城市可给予适当提高住房公积金贷款额度等相关支持政策。”8月16日，国家卫健委、国 ',
+ 'title': '多孩家庭公积金可提高额度'}
+2022-08-17 10:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BB%8A%E5%B9%B4%E5%8F%A4%E5%81%B6%E5%A5%B3%E4%B8%BB%E9%A2%9C%E5%80%BC%E5%A4%A7%E8%B5%8F> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BB%8A%E5%B9%B4%E5%8F%A4%E5%81%B6%E5%A5%B3%E4%B8%BB%E9%A2%9C%E5%80%BC%E5%A4%A7%E8%B5%8F>
+{'add_time': 1660703196,
+ 'history': [],
+ 'hot_num': 551186,
+ 'is_local': 0,
+ 'text': '#今年古偶女主颜值大赏# 上半年古偶女主不断出圈，下半年预备继续神仙打架，《梦华录》@刘亦菲 、《与君初相识》@Dear-迪丽热巴 '
+         '、《且试天下》@赵露思的微博 、《沉香如屑》@杨紫 、《苍兰诀》@虞书欣Esther  、《安乐传》@Dear-迪丽热巴 '
+         '、《请君》@李沁 、《雪鹰领主》@我是娜扎 、《尘缘》 ',
+ 'title': '今年古偶女主颜值大赏'}
+2022-08-17 10:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%8B%E4%B8%80%E5%8D%9A%E5%8F%91%E5%9E%8B%E5%B8%88> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%8B%E4%B8%80%E5%8D%9A%E5%8F%91%E5%9E%8B%E5%B8%88>
+{'add_time': 1660703203,
+ 'history': [],
+ 'hot_num': 563400,
+ 'is_local': 0,
+ 'text': '#王一博发型师# '
+         '有网友建议王一博发型师在《冰雨火》客串一个反派角色，发型师：演了，被抓了，还被一锅端了低情商：你长得好像反派高情商：你可以去演戏[doge] ',
+ 'title': '王一博发型师'}
+2022-08-17 10:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%88%98%E4%BA%A6%E8%8F%B2%E8%B0%88%E5%87%BA%E9%81%9320%E5%B9%B4%E7%9A%84%E5%8F%98%E5%8C%96> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%88%98%E4%BA%A6%E8%8F%B2%E8%B0%88%E5%87%BA%E9%81%9320%E5%B9%B4%E7%9A%84%E5%8F%98%E5%8C%96>
+{'add_time': 1660703210,
+ 'history': [{'hot_num': 564342, 'update_time': 1660703210}],
+ 'hot_num': 564342,
+ 'is_local': 0,
+ 'text': '#刘亦菲谈出道20年的变化# '
+         '从《金粉世家》白秀珠到《仙剑奇侠传》赵灵儿，从《神雕侠侣》小龙女到《二代妖精》白纤楚，从《花木兰》花木兰到《梦华录》赵盼儿，@刘亦菲 '
+         '作为演员已经出道整20年了。近日，刘亦菲在与新浪娱乐的独家对话中，分享了自己这20年的变化，以及对演员职业、对女性美的理解，也 ',
+ 'title': '刘亦菲谈出道20年的变化'}
+2022-08-17 10:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%85%AC%E5%8F%B8%E7%A7%B0%E7%8C%AB5%E6%AC%A1%E5%85%A5%E9%95%9C%E5%BD%B1%E5%93%8D%E4%B8%8A%E8%AF%BE%E5%BC%80%E9%99%A4%E8%80%81%E5%B8%88> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:26:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%85%AC%E5%8F%B8%E7%A7%B0%E7%8C%AB5%E6%AC%A1%E5%85%A5%E9%95%9C%E5%BD%B1%E5%93%8D%E4%B8%8A%E8%AF%BE%E5%BC%80%E9%99%A4%E8%80%81%E5%B8%88>
+{'add_time': 1660703217,
+ 'history': [{'hot_num': 530945, 'update_time': 1660703217}],
+ 'hot_num': 530945,
+ 'is_local': 0,
+ 'text': '【#公司称猫5次入镜影响上课开除老师#，法院判公司赔老师4万余元违法解雇赔偿金】近日，广东广州天河法院公开了一起案件。罗某是某公司美术老师，根据公司要求在家直播上课。某次课程中，罗某家中猫咪先后5次蹿入直播镜头。公司认为这影响了老师形象（授课期间做与授课无关的事情，如玩手机、浏览无关 ',
+ 'title': '公司称猫5次入镜影响上课开除老师'}
+2022-08-17 10:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%AD%A6%E6%B1%89%E4%B8%80%E5%A4%84%E7%96%91%E4%BC%BC%E8%B4%A9%E7%8C%AB%E9%BB%91%E7%AA%9D%E7%82%B9%E6%9B%9D%E5%85%89> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%AD%A6%E6%B1%89%E4%B8%80%E5%A4%84%E7%96%91%E4%BC%BC%E8%B4%A9%E7%8C%AB%E9%BB%91%E7%AA%9D%E7%82%B9%E6%9B%9D%E5%85%89>
+{'add_time': 1660703224,
+ 'history': [],
+ 'hot_num': 175204,
+ 'is_local': 0,
+ 'text': '【#武汉一处疑似贩猫黑窝点曝光# '
+         '警方介入调查】8月16日，武汉大智路附近一处疑似贩猫窝点被曝光。志愿者和热心市民现场拦截一辆面包车，车内放着7箱近80只猫咪，经报警，武汉警方已经介入调查此事。目前，现场志愿者已联系@武汉市小动物保护协会 '
+         '，工作人员赶到现场后正在与志愿者和爱心人士协商妥善 ',
+ 'title': '武汉一处疑似贩猫黑窝点曝光'}
+2022-08-17 10:27:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%82%96%E6%88%98%E6%96%B9%E5%BE%8B%E5%B8%88%E8%B5%B7%E8%AF%89%E9%80%A0%E8%B0%A3%E8%80%85> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%82%96%E6%88%98%E6%96%B9%E5%BE%8B%E5%B8%88%E8%B5%B7%E8%AF%89%E9%80%A0%E8%B0%A3%E8%80%85>
+{'add_time': 1660703228,
+ 'history': [],
+ 'hot_num': 177075,
+ 'is_local': 0,
+ 'text': '【#肖战方律师起诉造谣者#】@上海九泽律师事务所官方微博 '
+         '16日发布律师声明及案件简讯，表示上海九泽律师事务所接受肖战先生@X玖少年团肖战DAYTOY '
+         '的委托，就相关网络平台用户涉嫌侵犯肖战先生名誉权等合法权益之行为，进行侵权证据保全及诉讼维权工作。声明表示，相关网络用户频繁捏造涉及肖战恋情等 ',
+ 'title': '肖战方律师起诉造谣者'}
+2022-08-17 10:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8C%AB%E5%92%AA%E7%9A%84%E7%88%B1%E6%84%8F%E6%9C%89%E5%A4%9A%E8%AE%A9%E4%BA%BA%E7%AA%92%E6%81%AF> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8C%AB%E5%92%AA%E7%9A%84%E7%88%B1%E6%84%8F%E6%9C%89%E5%A4%9A%E8%AE%A9%E4%BA%BA%E7%AA%92%E6%81%AF>
+{'add_time': 1660703235,
+ 'history': [],
+ 'hot_num': 177197,
+ 'is_local': 0,
+ 'text': '#猫咪的爱意有多让人窒息##亿点曝光计划# '
+         '有一只很懂事的猫是什么体验？不开心的时候它会凑过来贴贴，摸摸脸，亲亲满满的爱意，太让人窒息了[抱抱]http://t.cn/A6asHt09 ',
+ 'title': '猫咪的爱意有多让人窒息'}
+2022-08-17 10:27:16 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 9 pages/min), scraped 19 items (at 9 items/min)
+2022-08-17 10:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8C%97%E4%BA%AC%E4%B8%80%E5%A6%88%E5%A6%88%E6%99%92%E5%A5%B3%E5%84%BF0%E5%88%B018%E5%B2%81%E7%85%A7%E7%89%87> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8C%97%E4%BA%AC%E4%B8%80%E5%A6%88%E5%A6%88%E6%99%92%E5%A5%B3%E5%84%BF0%E5%88%B018%E5%B2%81%E7%85%A7%E7%89%87>
+{'add_time': 1660703239,
+ 'history': [],
+ 'hot_num': 183360,
+ 'is_local': 0,
+ 'text': '#北京一妈妈晒女儿0到18岁照片# '
+         '女大十八变，越变越好看！北京一位妈妈晒出女儿0到18岁的照片走红，只是这位女孩15岁到18岁之间到底经历了什么呢？#北京新鲜事# '
+         'http://t.cn/A6SbqGJu ',
+ 'title': '北京一妈妈晒女儿0到18岁照片'}
+2022-08-17 10:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B9%BF%E5%B7%9E%E6%96%B0%E5%A2%9E3%E4%BE%8B%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B9%BF%E5%B7%9E%E6%96%B0%E5%A2%9E3%E4%BE%8B%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A>
+{'add_time': 1660703246,
+ 'history': [{'hot_num': 184678, 'update_time': 1660703246}],
+ 'hot_num': 184678,
+ 'is_local': 0,
+ 'text': '【[话筒]昨日广东新增6例本土确诊病例、2例本土无症状感染者】8月16日0-24时，全省新增本土确诊病例6例（广州3例，惠州1例，湛江2例）；新增本土无症状感染者2例（湛江2例）；另有3例本土无症状感染者转确诊病例（湛江3例）。全省新增境外输入确诊病例11例（广州6例，深圳5例）；新增境外输入无症状感 ',
+ 'title': '广州新增3例本土确诊'}
+2022-08-17 10:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%A5%BF%E8%97%8F%E5%A2%9E%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A16%E4%BE%8B%E6%97%A0%E7%97%87%E7%8A%B6670%E4%BE%8B> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%A5%BF%E8%97%8F%E5%A2%9E%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A16%E4%BE%8B%E6%97%A0%E7%97%87%E7%8A%B6670%E4%BE%8B>
+{'add_time': 1660703250,
+ 'history': [{'hot_num': 184895, 'update_time': 1660703250}],
+ 'hot_num': 184895,
+ 'is_local': 0,
+ 'text': '【#8月16日新增本土确诊566例# #8月16日新增本土无症状2322例# '
+         '#西藏增本土确诊16例无症状670例#】8月16日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例637例。其中境外输入病例71例，含12例由无症状感染者转为确诊病例；本土病例566例（海南482例，浙江35例，西藏16例，广东9 ',
+ 'title': '西藏增本土确诊16例无症状670例'}
+2022-08-17 10:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%BB%84%E5%B1%B1%E4%B8%8D%E5%86%8D%E8%A2%AB%E6%B8%B8%E5%AE%A2%E6%8C%A4%E7%88%86> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%BB%84%E5%B1%B1%E4%B8%8D%E5%86%8D%E8%A2%AB%E6%B8%B8%E5%AE%A2%E6%8C%A4%E7%88%86>
+{'add_time': 1660703256,
+ 'history': [{'hot_num': 189667, 'update_time': 1660703256}],
+ 'hot_num': 189667,
+ 'is_local': 0,
+ 'text': '【#黄山不再被游客挤爆#】#黄山为何不再是顶流了# '
+         '黄山市算得上安徽最知名的城市之一。这里有黄山景区、宏村西递，有千年徽州文化的灿烂历史，有黄山毛峰、祁门红茶、太平猴魁等多种名茶。同时，它却是整个安徽，整个华东六省76个地级市中GDP最低的那一个。安逸而停滞，是很多离开或是来到黄山的人给 ',
+ 'title': '黄山不再被游客挤爆'}
+2022-08-17 10:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%8B%9C%E7%99%BB%E7%AD%BE%E7%BD%B22022%E5%B9%B4%E9%80%9A%E8%83%80%E5%89%8A%E5%87%8F%E6%B3%95%E6%A1%88> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%8B%9C%E7%99%BB%E7%AD%BE%E7%BD%B22022%E5%B9%B4%E9%80%9A%E8%83%80%E5%89%8A%E5%87%8F%E6%B3%95%E6%A1%88>
+{'add_time': 1660703262,
+ 'history': [],
+ 'hot_num': 191891,
+ 'is_local': 0,
+ 'text': '#拜登签署2022年通胀削减法案#【美国总统拜登签署《2022年通胀削减法案》】当地时间8月16日，美国总统乔·拜登签署了总价值为7500亿美元的《2022年通胀削减法案》（Inflation '
+         'Reduction Act），令该立法正式生效。该立法的内容包括应对气候变化和扩大医疗保健覆盖范围等。白宫表示，在接下来的几周内 ',
+ 'title': '拜登签署2022年通胀削减法案'}
+2022-08-17 10:27:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B0%8F%E5%85%B0%E8%8A%B1%E5%A5%BD%E5%B0%B4%E5%B0%AC> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%B0%8F%E5%85%B0%E8%8A%B1%E5%A5%BD%E5%B0%B4%E5%B0%AC>
+{'add_time': 1660703270,
+ 'history': [],
+ 'hot_num': 194430,
+ 'is_local': 0,
+ 'text': '#小兰花好尴尬# #虞书欣小兰花观察日记##苍兰诀# 小兰花长大了 http://t.cn/A6SbXsvi ',
+ 'title': '小兰花好尴尬'}
+2022-08-17 10:27:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%89%E9%AA%A8%E9%81%A5> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:27:55 [scrapy.core.scraper] ERROR: Error processing {'add_time': 1660703275,
+ 'history': [],
+ 'hot_num': 194906,
+ 'is_local': 0,
+ 'text': '#今年古偶女主颜值大赏# 上半年古偶女主不断出圈，下半年预备继续神仙打架，《安乐传》@Dear-迪丽热巴 、《请君》@李沁 '
+         '、《雪鹰领主》@我是娜扎 、《尘缘》@angelababy 、《长相思》@杨紫 、《长月烬明》@白鹿my 、《玉骨遥》@演员任敏 '
+         '、《护心》@周也yeah 、《花戎》@鞠婧祎 、《春闺梦里人》 ',
+ 'title': '玉骨遥'}
+Traceback (most recent call last):
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/defer.py", line 150, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/tmp/weibotop-1659773867-fmnm1mli.egg/weibotop/pipelines.py", line 47, in process_item
+    col.replace_one({"title": item['title']}, weibotop)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/collection.py", line 752, in replace_one
+    self._update_retryable(
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/collection.py", line 677, in _update_retryable
+    return self.__database.client._retryable_write(
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1340, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1229, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1261, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/collection.py", line 669, in _update
+    return self._update(
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/collection.py", line 646, in _update
+    _check_write_command_response(result)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/helpers.py", line 209, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/pymongo/helpers.py", line 179, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: After applying the update, the (immutable) field '_id' was found to have been altered to _id: ObjectId('62fb320dee4ef65c0e30cc67'), full error: {'index': 0, 'code': 66, 'errmsg': "After applying the update, the (immutable) field '_id' was found to have been altered to _id: ObjectId('62fb320dee4ef65c0e30cc67')"}
+2022-08-17 10:28:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%AE%98%E6%96%B9%E5%9B%9E%E5%BA%94%E9%87%8D%E5%BA%86%E5%98%89%E9%99%B5%E6%B1%9F%E8%A2%AB%E6%99%92%E5%B9%B2%E4%BA%86> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%AE%98%E6%96%B9%E5%9B%9E%E5%BA%94%E9%87%8D%E5%BA%86%E5%98%89%E9%99%B5%E6%B1%9F%E8%A2%AB%E6%99%92%E5%B9%B2%E4%BA%86>
+{'add_time': 1660703281,
+ 'history': [],
+ 'hot_num': 195760,
+ 'is_local': 0,
+ 'text': '【#官方回应重庆嘉陵江被晒干了#】#周刊君现场# '
+         '近日，网传#重庆嘉陵江都被晒干了#引发关注。中央气象台发布高温红色预警，16日至18日重庆最高气温或达44℃。15日18时，重庆市防汛抗旱指挥部发布干旱灾害橙色预警和抗旱Ⅲ级应急响应。对此，8月16日下午，长江委水文上游局工作人员回应 ',
+ 'title': '官方回应重庆嘉陵江被晒干了'}
+2022-08-17 10:28:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%B8%8A%E6%B5%B7%E5%85%A8%E9%9D%A2%E6%8E%A8%E8%A1%8C%E8%BD%BB%E5%BE%AE%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA%E4%B8%8D%E4%BA%88%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%B8%8A%E6%B5%B7%E5%85%A8%E9%9D%A2%E6%8E%A8%E8%A1%8C%E8%BD%BB%E5%BE%AE%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA%E4%B8%8D%E4%BA%88%E8%A1%8C%E6%94%BF%E5%A4%84%E7%BD%9A>
+{'add_time': 1660703287,
+ 'history': [],
+ 'hot_num': 219416,
+ 'is_local': 0,
+ 'text': '【#上海全面推行轻微违法行为不予行政处罚#】为了创造更加包容、更具活力、更有温度的营商环境，上海在前期探索的基础上，将全面推行轻微违法行为依法不予行政处罚。指导意见已经出台，从8月20日起正式实施。《指导意见》明确制定依据、确定具体不予处罚的情形，包括“违法行为轻微，且危害后果轻微并 ',
+ 'title': '上海全面推行轻微违法行为不予行政处罚'}
+2022-08-17 10:28:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%9D%AD%E5%B7%9E%E7%96%AB%E6%83%85%E9%98%B2%E6%8E%A7> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%9D%AD%E5%B7%9E%E7%96%AB%E6%83%85%E9%98%B2%E6%8E%A7>
+{'add_time': 1660703292,
+ 'history': [],
+ 'hot_num': 224364,
+ 'is_local': 0,
+ 'text': '【记者深入杭州市钱塘区，区域内部分居民核酸检测工作正在进行】今晚8点，@中国蓝新闻 '
+         '记者来到钱塘区下沙街道早城社区，社区工作人员正在引导居民下楼进行核酸检测工作。记者了解到，今晚起，钱塘区下沙街道、白杨街道市民都要求完成一次核酸检测工作。#杭州疫情防控#   '
+         'http://t.cn/A6Sb9Leg ',
+ 'title': '杭州疫情防控'}
+2022-08-17 10:28:16 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 10 pages/min), scraped 28 items (at 9 items/min)
+2022-08-17 10:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%A6%8F%E5%BB%BA%E6%8A%A5%E5%91%8A%E6%96%B0%E5%A2%9E%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A8%E4%BE%8B> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%A6%8F%E5%BB%BA%E6%8A%A5%E5%91%8A%E6%96%B0%E5%A2%9E%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A8%E4%BE%8B>
+{'add_time': 1660703299,
+ 'history': [],
+ 'hot_num': 229601,
+ 'is_local': 0,
+ 'text': '福建报告新增本土确诊8例',
+ 'title': '福建报告新增本土确诊8例'}
+2022-08-17 10:28:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BB%8A%E6%99%A8%E6%88%90%E9%83%BD%E4%B8%8A%E7%A9%BA%E7%8E%B0%E7%BB%9D%E7%BE%8E%E7%81%AB%E7%83%A7%E4%BA%91> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%BB%8A%E6%99%A8%E6%88%90%E9%83%BD%E4%B8%8A%E7%A9%BA%E7%8E%B0%E7%BB%9D%E7%BE%8E%E7%81%AB%E7%83%A7%E4%BA%91>
+{'add_time': 1660703306,
+ 'history': [],
+ 'hot_num': 252467,
+ 'is_local': 0,
+ 'text': '【热҈得҈字҈都҈出҈汗҈了҈！#成都多个国家气象观测站打破历史纪录#】昨天（16日）5个国家站再次打破历史纪录，2个国家站追平历史纪录。今天早上7点简阳气温已达30.2℃，成都今天又是“热晴”的一天，最高气温可达41℃，午后中西部有分散阵雨或雷雨，小布提醒各位小伙伴们一定要防暑降温，高温时 ',
+ 'title': '今晨成都上空现绝美火烧云'}
+2022-08-17 10:28:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8C%97%E4%BA%AC8%E6%9C%8816%E6%97%A5%E6%96%B0%E5%A2%9E1%E4%BE%8B%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%8C%97%E4%BA%AC8%E6%9C%8816%E6%97%A5%E6%96%B0%E5%A2%9E1%E4%BE%8B%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A>
+{'add_time': 1660703310,
+ 'history': [],
+ 'hot_num': 265723,
+ 'is_local': 0,
+ 'text': '【#北京8月16日新增1例本土确诊#】#北京8月16日新增1例本土无症状# '
+         '8月16日0时至24时，新增1例本土确诊病例（为隔离观察人员）和1例无症状感染者（为闭环管理人员），无新增疑似病例；新增21例境外输入确诊病例（含4例无症状感染者转确诊病例）和5例无症状感染者，无新增疑似病例。治愈出院4例，解除医 ',
+ 'title': '北京8月16日新增1例本土确诊'}
+2022-08-17 10:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%9D%8E%E6%99%A8%20%E5%B0%8F%E6%9D%A8%E5%93%A5%E7%9B%B4%E6%92%AD%E9%97%B4> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E6%9D%8E%E6%99%A8%20%E5%B0%8F%E6%9D%A8%E5%93%A5%E7%9B%B4%E6%92%AD%E9%97%B4>
+{'add_time': 1660703315,
+ 'history': [{'hot_num': 277460, 'update_time': 1660703315}],
+ 'hot_num': 277460,
+ 'is_local': 0,
+ 'text': '#李晨 '
+         '小杨哥直播间#李晨去小杨哥的直播间带货了，难道所有明星的最终归宿都是直播间带货吗？[允悲]不过小杨哥的直播间就算没有明星也很火吧。[喵喵] '
+         'http://t.cn/A6SG7C6h ',
+ 'title': '李晨 小杨哥直播间'}
+2022-08-17 10:28:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%99%88%E6%A5%9A%E7%94%9F%E4%BF%9E%E7%81%8F%E6%98%8E%E9%A9%BE%E9%A9%B6%E4%BD%93%E9%AA%8C%E5%8F%8D%E5%B7%AE%E6%84%9F> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%99%88%E6%A5%9A%E7%94%9F%E4%BF%9E%E7%81%8F%E6%98%8E%E9%A9%BE%E9%A9%B6%E4%BD%93%E9%AA%8C%E5%8F%8D%E5%B7%AE%E6%84%9F>
+{'add_time': 1660703321,
+ 'history': [],
+ 'hot_num': 279934,
+ 'is_local': 0,
+ 'text': '#陈楚生开车vs俞灏明开车# #陈楚生俞灏明驾驶体验反差感# 看来车与车之间的体验并不相通！同样都是开车，生哥@陈楚生 '
+         '车上的@陆虎ING @苏醒AllenSu @王栎鑫 @王铮亮 @张远Bird 和@俞灏明 车上的@姚政 '
+         '体验感竟完全不同！这车不错，下次请换！#快乐再出发# http://t.cn/A6SboiCL ',
+ 'title': '陈楚生俞灏明驾驶体验反差感'}
+2022-08-17 10:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%BE%8E%E5%86%9B%E5%81%B7%E6%B2%B9%E8%BD%A6%E9%98%9F%E4%B8%80%E7%9C%BC%E6%9C%9B%E4%B8%8D%E5%88%B0%E5%A4%B4> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%BE%8E%E5%86%9B%E5%81%B7%E6%B2%B9%E8%BD%A6%E9%98%9F%E4%B8%80%E7%9C%BC%E6%9C%9B%E4%B8%8D%E5%88%B0%E5%A4%B4>
+{'add_time': 1660703328,
+ 'history': [],
+ 'hot_num': 281905,
+ 'is_local': 0,
+ 'text': '#美军偷油车队一眼望不到头#【#美国在叙利亚盗抢资源行径恶劣#】叙利亚东北部哈塞克省一条通往边境的公路上，美国军队的油罐车排成一列，一眼望不到头。这些满载着从叙利亚偷盗出的石油的军车依次穿过边境驶入伊拉克境内，消失在远方。与此同时，生活在叙首都大马士革的居民已在加油站前等待了数小时， ',
+ 'title': '美军偷油车队一眼望不到头'}
+2022-08-17 10:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3DBLACKPINK%E5%85%AC%E5%BC%80%E5%85%88%E8%A1%8C%E6%9B%B2%E9%A2%84%E5%91%8A> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3DBLACKPINK%E5%85%AC%E5%BC%80%E5%85%88%E8%A1%8C%E6%9B%B2%E9%A2%84%E5%91%8A>
+{'add_time': 1660703332,
+ 'history': [],
+ 'hot_num': 286813,
+ 'is_local': 0,
+ 'text': '#BLACKPINK公开先行曲预告#BLACKPINK《Pink '
+         'Venom》公开预告！Jennie，lisa，金智秀，朴彩英新造型好酷[哇] 新歌将于本周五发行，期待！ '
+         'http://t.cn/A6SbsBjn ',
+ 'title': 'BLACKPINK公开先行曲预告'}
+2022-08-17 10:28:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D4%E5%B2%81%E5%8D%8A%E5%84%BF%E5%AD%90%E6%B7%A1%E5%AE%9A%E5%B8%AE%E5%A6%88%E5%A6%88%E6%B8%85%E7%90%86%E6%AD%BB%E8%80%81%E9%BC%A0> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D4%E5%B2%81%E5%8D%8A%E5%84%BF%E5%AD%90%E6%B7%A1%E5%AE%9A%E5%B8%AE%E5%A6%88%E5%A6%88%E6%B8%85%E7%90%86%E6%AD%BB%E8%80%81%E9%BC%A0>
+{'add_time': 1660703340,
+ 'history': [],
+ 'hot_num': 296944,
+ 'is_local': 0,
+ 'text': '【#4岁半儿子淡定帮妈妈清理死老鼠#】#萌娃怕妈妈害怕一路小跑丢老鼠# '
+         '近日，河北沧州，妈妈在家发现一只死老鼠，吓得不敢靠近，便请4岁半的儿子帮忙。勇敢的小宝贝二话没说，淡定地将死老鼠扫进簸箕，一路小跑着扔出去了。网友：谁还不是个保护妈妈的小男子汉呢！（中国青年报）   ',
+ 'title': '4岁半儿子淡定帮妈妈清理死老鼠'}
+2022-08-17 10:29:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%AD%A6%E7%8A%AC%E9%AB%98%E6%B8%A9%E5%A4%A9%E6%B0%94%E6%89%A7%E5%8B%A4%E8%A2%AB%E5%9C%B0%E9%9D%A2%E7%83%AB%E5%BE%97%E8%B7%B3jio> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%AD%A6%E7%8A%AC%E9%AB%98%E6%B8%A9%E5%A4%A9%E6%B0%94%E6%89%A7%E5%8B%A4%E8%A2%AB%E5%9C%B0%E9%9D%A2%E7%83%AB%E5%BE%97%E8%B7%B3jio>
+{'add_time': 1660703345,
+ 'history': [],
+ 'hot_num': 316140,
+ 'is_local': 0,
+ 'text': '【#警犬高温天气执勤被地面烫得跳jio#[抱抱]】“闪电”是重庆的排爆警犬。现在天气炎热，却正值暑运高峰，“闪电”正坚守岗位保障铁路安全。犬通过舌头散热，但“闪电”要闭着嘴嗅闻进行工作，每20分钟就要休息补水防中暑；地表温度高时或接近60℃，即便避免了正午出外勤，它也常被烫到跳脚↓“无言的 ',
+ 'title': '警犬高温天气执勤被地面烫得跳jio'}
+2022-08-17 10:29:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%A5%BF%E5%8D%97%E4%BA%A4%E5%A4%A7%E4%B8%8A%E7%99%BE%E7%A0%94%E7%A9%B6%E7%94%9F%E6%96%B0%E7%94%9F%E9%9C%80%E6%A0%A1%E5%A4%96%E8%87%AA%E8%B4%B9%E7%A7%9F%E6%88%BF> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%A5%BF%E5%8D%97%E4%BA%A4%E5%A4%A7%E4%B8%8A%E7%99%BE%E7%A0%94%E7%A9%B6%E7%94%9F%E6%96%B0%E7%94%9F%E9%9C%80%E6%A0%A1%E5%A4%96%E8%87%AA%E8%B4%B9%E7%A7%9F%E6%88%BF>
+{'add_time': 1660703349,
+ 'history': [],
+ 'hot_num': 321851,
+ 'is_local': 0,
+ 'text': '#西南交大上百研究生新生需校外自费租房#【#西南交大研究生新生需网上抢宿舍#，未抢到的上百人需校外租房】本科苦读几年，今年考上了西南交通大学全日制硕士研究生的黎辰（化名）再过10天就要开学，他即将开启人生又一崭新的航道，却没有太多兴奋劲儿。原因是近几日他被学校告知，因学校宿舍资源紧张， ',
+ 'title': '西南交大上百研究生新生需校外自费租房'}
+2022-08-17 10:29:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%A9%AC%E6%96%AF%E5%85%8B%E7%A7%B0%E5%B0%86%E6%94%B6%E8%B4%AD%E6%9B%BC%E8%81%94> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%A9%AC%E6%96%AF%E5%85%8B%E7%A7%B0%E5%B0%86%E6%94%B6%E8%B4%AD%E6%9B%BC%E8%81%94>
+{'add_time': 1660703355,
+ 'history': [],
+ 'hot_num': 332483,
+ 'is_local': 0,
+ 'text': '#马斯克称将收购曼联#有钱人的快乐，想买什么买什么，当然，并不是有钱人都快乐，看到马斯克收购曼联，阿布一定会哭晕在厕所…… ',
+ 'title': '马斯克称将收购曼联'}
+2022-08-17 10:29:16 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 11 pages/min), scraped 39 items (at 11 items/min)
+2022-08-17 10:29:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%90%A4%E7%81%AF%E5%A4%8D%E6%B4%BB> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%90%A4%E7%81%AF%E5%A4%8D%E6%B4%BB>
+{'add_time': 1660703361,
+ 'history': [],
+ 'hot_num': 351963,
+ 'is_local': 0,
+ 'text': '#萤灯复活#《沉香如屑》说中了，破萤灯她真的又又又又活了，男女主复活需要半颗菡萏花心 '
+         '，她只需要一片花瓣！[笑cry][笑cry]这剧应该叫《阴魂不散的破灯传》[允悲][允悲]，感觉好多人弃剧都是因为她~#沉香如屑香饽饽追剧大赛##剧集二创榜# '
+         'http://t.cn/A6Sbe6t7 ',
+ 'title': '萤灯复活'}
+2022-08-17 10:29:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%B2%E5%A8%9C%E8%B4%9D%E5%84%BF%E5%8D%9642%E5%85%83%E4%B8%BB%E6%92%AD%E7%9B%B4%E6%92%AD%E8%A2%AB%E6%8A%93> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%B2%E5%A8%9C%E8%B4%9D%E5%84%BF%E5%8D%9642%E5%85%83%E4%B8%BB%E6%92%AD%E7%9B%B4%E6%92%AD%E8%A2%AB%E6%8A%93>
+{'add_time': 1660703368,
+ 'history': [],
+ 'hot_num': 363527,
+ 'is_local': 0,
+ 'text': '【#玲娜贝儿卖42元主播直播被抓#】#上海警方破获2500万假迪士尼玩偶案#近日，上海警方破获一起制造和销售迪士尼玩偶案件，捣毁售假窝点3处、制假窝点1处，当场查获各类品牌系列玩偶2600余个，涉及30余种品类，涉案金额2500余万元。2022年3月初，市民刘先生到上海市公安局静安分局上海站地区治安派出所 ',
+ 'title': '玲娜贝儿卖42元主播直播被抓'}
+2022-08-17 10:29:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A4%9A%E9%83%A8%E9%97%A8%E9%BC%93%E5%8A%B1%E6%AF%95%E4%B8%9A%E7%94%9F%E5%88%B0%E5%9F%BA%E5%B1%82%E5%BB%BA%E5%8A%9F%E7%AB%8B%E4%B8%9A> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%A4%9A%E9%83%A8%E9%97%A8%E9%BC%93%E5%8A%B1%E6%AF%95%E4%B8%9A%E7%94%9F%E5%88%B0%E5%9F%BA%E5%B1%82%E5%BB%BA%E5%8A%9F%E7%AB%8B%E4%B8%9A>
+{'add_time': 1660703375,
+ 'history': [{'hot_num': 391720, 'update_time': 1660703375}],
+ 'hot_num': 391720,
+ 'is_local': 0,
+ 'text': '【#多部门鼓励毕业生到基层建功立业##让大学生在基层干得好留得住#】“去哪儿就业”是社会各界聚焦的热点话题。如今，不少毕业生像孙浩一样，不再把留在大城市工作当作毕业后的首选，非一线城市、基层就业成了他们的新选择。有调查显示，越来越多的大学生对回乡就业、基层就业的认识偏理性，近90%的讨 ',
+ 'title': '多部门鼓励毕业生到基层建功立业'}
+2022-08-17 10:29:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D24%E5%B2%81%E5%A7%91%E5%A8%98%E6%8E%8C%E8%88%B5%E5%B1%B1%E4%B8%9C%E8%88%B0%E5%8A%88%E6%B3%A2%E6%96%A9%E6%B5%AA> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D24%E5%B2%81%E5%A7%91%E5%A8%98%E6%8E%8C%E8%88%B5%E5%B1%B1%E4%B8%9C%E8%88%B0%E5%8A%88%E6%B3%A2%E6%96%A9%E6%B5%AA>
+{'add_time': 1660703380,
+ 'history': [],
+ 'hot_num': 394451,
+ 'is_local': 0,
+ 'text': '【帅！#95后飞行员在校就飞歼10#[威武]】唐晓菁，#24岁姑娘掌舵山东舰劈波斩浪#，面对不同海况，她能以最快速度调整航向，与舰载机完美配合。23岁的潘行宇，是人民空军首批在校就飞歼-10的飞行员，从飞高教机名次垫底到戴上头盔心里就有底，他说：“夜航时俯瞰过万家灯火，想守护他们的安稳生活。”致 ',
+ 'title': '24岁姑娘掌舵山东舰劈波斩浪'}
+2022-08-17 10:29:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%8B%E9%B9%A4%E6%A3%A3%E5%86%B2%E6%B5%AA%E5%9B%BE> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E7%8E%8B%E9%B9%A4%E6%A3%A3%E5%86%B2%E6%B5%AA%E5%9B%BE>
+{'add_time': 1660703387,
+ 'history': [{'hot_num': 404175, 'update_time': 1660703387}],
+ 'hot_num': 404175,
+ 'is_local': 0,
+ 'text': '#王鹤棣冲浪图# 你以为的王鹤棣冲浪P1-P3，实际上的棣棣冲浪P4-P6[哈哈] ',
+ 'title': '王鹤棣冲浪图'}
+2022-08-17 10:29:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%AB%98%E4%BA%9A%E9%BA%9F%E5%9B%9E%E5%BA%94> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E9%AB%98%E4%BA%9A%E9%BA%9F%E5%9B%9E%E5%BA%94>
+{'add_time': 1660703392,
+ 'history': [],
+ 'hot_num': 404420,
+ 'is_local': 0,
+ 'text': '#高亚麟回应# '
+         '网传高亚麟在直播时把“时代少年团”不小心说成了“时代马戏团”，随后有粉丝私信高亚麟，高亚麟回复：这个是营销号博人眼球编的。造谣一张嘴......[汗] ',
+ 'title': '高亚麟回应'}
+2022-08-17 10:29:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%BD%AC%E5%90%91%E6%99%BA%E6%80%A7%E6%81%8B> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:29:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%BD%AC%E5%90%91%E6%99%BA%E6%80%A7%E6%81%8B>
+{'add_time': 1660703398,
+ 'history': [],
+ 'hot_num': 411747,
+ 'is_local': 0,
+ 'text': '【#智性恋择偶观#：颜值可以平平，思想必须性感】#为什么年轻人转向智性恋# '
+         '相比于外表，智性恋更容易被一个人智商和逻辑思维吸引，如果你会忽略掉一个人的颜值，因为ta的高智商而爱上ta，那么你很有可能是一个智性恋。我们找到了几位声称自己是智性恋的读者聊了聊。“智性恋”怎么定义“智”？如果对 ',
+ 'title': '为什么年轻人转向智性恋'}
+2022-08-17 10:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%86%85%E5%90%91%E7%9A%84%E4%BA%BA%E6%B2%A1%E6%83%B9%E4%BD%A0%E4%BB%AC%E4%BB%BB%E4%BD%95%E4%BA%BA> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:30:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E5%86%85%E5%90%91%E7%9A%84%E4%BA%BA%E6%B2%A1%E6%83%B9%E4%BD%A0%E4%BB%AC%E4%BB%BB%E4%BD%95%E4%BA%BA>
+{'add_time': 1660703404,
+ 'history': [],
+ 'hot_num': 464216,
+ 'is_local': 0,
+ 'text': '#内向的人没惹你们任何人# '
+         '【TEDx演讲：别再劝我外向了，内向也挺好的】“活泼一点”“别那么害羞”“看人家多开朗”……内向的孩子总是在被对比中长大，仿佛总有人告诉你：内向是错。可不主动不等于没有想法，不活泼也不代表就没有热情。每一个内向的人，都是内心丰富且低调的特别存在↓  ',
+ 'title': '内向的人没惹你们任何人'}
+2022-08-17 10:30:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%80%81%E5%B9%B4%E5%81%A5%E8%B5%B0%E9%98%9F%E6%97%A0%E8%A7%86%E7%BA%A2%E7%BB%BF%E7%81%AF%E9%80%BC%E5%81%9C%E4%BC%97%E8%BD%A6> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:30:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%80%81%E5%B9%B4%E5%81%A5%E8%B5%B0%E9%98%9F%E6%97%A0%E8%A7%86%E7%BA%A2%E7%BB%BF%E7%81%AF%E9%80%BC%E5%81%9C%E4%BC%97%E8%BD%A6>
+{'add_time': 1660703411,
+ 'history': [],
+ 'hot_num': 464639,
+ 'is_local': 0,
+ 'text': '#事故警示#一组动图警示你：行人过马路不能随心所欲，如此横穿害人害己。#老年健走队无视红绿灯逼停众车# ',
+ 'title': '老年健走队无视红绿灯逼停众车'}
+2022-08-17 10:30:16 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 9 pages/min), scraped 48 items (at 9 items/min)
+2022-08-17 10:30:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%8B%8D%E5%85%B0%E8%AF%80%E5%8F%88%E6%96%AD%E6%9B%B4%E4%BA%86> (referer: https://api.weibo.cn/2/page?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot)
+2022-08-17 10:30:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.weibo.cn/2/searchall?gsid=_2A25P50dFDeRxGeFO7FQW8i7KzjyIHXVqtd2NrDV6PUJbkdANLRPbkWpNQVo2PALb0iBUq747x0EzGltixct0GNU9&from=10C7393010&c=iphone&s=1F2F9E9C&containerid=100103type%3D1%26q%3D%E8%8B%8D%E5%85%B0%E8%AF%80%E5%8F%88%E6%96%AD%E6%9B%B4%E4%BA%86>
+{'add_time': 1660703418,
+ 'history': [],
+ 'hot_num': 518199,
+ 'is_local': 0,
+ 'text': '为诀人的精神状态感到担忧…… #苍兰诀又断更了# #苍兰诀 群像# ',
+ 'title': '苍兰诀又断更了'}
+2022-08-17 10:30:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 10:30:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 44246,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 2769697,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'elapsed_time_seconds': 301.942256,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 2, 30, 18, 590485),
+ 'httpcompression/response_bytes': 19043007,
+ 'httpcompression/response_count': 51,
+ 'item_scraped_count': 49,
+ 'log_count/DEBUG': 100,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'memusage/max': 82976768,
+ 'memusage/startup': 73347072,
+ 'request_depth_max': 1,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2022, 8, 17, 2, 25, 16, 648229)}
+2022-08-17 10:30:18 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,78 @@
+2022-04-15 21:54:20 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: dizhensubao)
+2022-04-15 21:54:20 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1056-raspi-aarch64-with-glibc2.17
+2022-04-15 21:54:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-04-15 21:54:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'dizhensubao',
+ 'DOWNLOAD_DELAY': 5,
+ 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage',
+ 'LOG_FILE': 'logs/dizhensubao/dizhen/7fc11aa5bcc311ecb5e1b708da8c9b64.log',
+ 'NEWSPIDER_MODULE': 'dizhensubao.spiders',
+ 'SPIDER_MODULES': ['dizhensubao.spiders']}
+2022-04-15 21:54:20 [scrapy.extensions.telnet] INFO: Telnet Password: 261065cdac8fe731
+2022-04-15 21:54:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-04-15 21:54:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'dizhensubao.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-04-15 21:54:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-04-15 21:54:21 [py.warnings] WARNING: /root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/project.py:81: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  warnings.warn(
+
+2022-04-15 21:54:21 [twisted] CRITICAL: Unhandled error in Deferred:
+2022-04-15 21:54:21 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/twisted/internet/defer.py", line 1661, in _inlineCallbacks
+    result = current_context.run(gen.send, result)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/crawler.py", line 87, in crawl
+    self.engine = self._create_engine()
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/crawler.py", line 101, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/core/scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/middleware.py", line 35, in from_settings
+    mw = create_instance(mwcls, settings, crawler)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/scrapy/utils/misc.py", line 172, in create_instance
+    instance = objcls(*args, **kwargs)
+  File "/tmp/dizhensubao-1649748867-suhs8_uu.egg/dizhensubao/pipelines.py", line 83, in __init__
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/commands/core.py", line 748, in flushdb
+    return self.execute_command("FLUSHDB", *args, **kwargs)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/client.py", line 1173, in execute_command
+    return conn.retry.call_with_retry(
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/retry.py", line 41, in call_with_retry
+    return do()
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/client.py", line 1174, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/client.py", line 1150, in _send_command_parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/client.py", line 1189, in parse_response
+    response = connection.read_response()
+  File "/root/archiconda3/envs/spider/lib/python3.8/site-packages/redis/connection.py", line 817, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.

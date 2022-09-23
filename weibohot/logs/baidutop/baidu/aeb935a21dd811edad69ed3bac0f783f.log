@@ -1,0 +1,372 @@
+2022-08-17 11:00:12 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: baidutop)
+2022-08-17 11:00:13 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-08-17 11:00:13 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-08-17 11:00:13 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'baidutop',
+ 'LOG_FILE': 'logs/baidutop/baidu/aeb935a21dd811edad69ed3bac0f783f.log',
+ 'NEWSPIDER_MODULE': 'baidutop.spiders',
+ 'SPIDER_MODULES': ['baidutop.spiders']}
+2022-08-17 11:00:13 [scrapy.extensions.telnet] INFO: Telnet Password: 970e474921d99efc
+2022-08-17 11:00:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-17 11:00:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'baidutop.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-17 11:00:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-17 11:00:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['baidutop.pipelines.MongodbPipeline', 'baidutop.pipelines.SendCloudMsg']
+2022-08-17 11:00:15 [scrapy.core.engine] INFO: Spider opened
+2022-08-17 11:00:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-17 11:00:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-08-17 11:00:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://top.baidu.com/board?tab=realtime> (referer: None)
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '党的十八大以来，我国把创新作为引领发展的第一动力，全面实施创新驱动发展战略，在多个创新领域实现重大突破，迈入创新型国家行列。',
+ 'history': [],
+ 'hotScore': 4902410,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/aaa6509cf01e766ff962acf112346a8d',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%88%E5%85%A5%E5%88%9B%E6%96%B0%E5%9E%8B%E5%9B%BD%E5%AE%B6%E8%A1%8C%E5%88%97&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '中国迈入创新型国家行列'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '16日，国家卫生健康委等17部门发布指导意见，进一步完善和落实积极生育支持措施。意见要求，深入实施一对夫妻可以生育三个子女政策及配套支持措施。',
+ 'history': [],
+ 'hotScore': 4997874,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/4d3b8f8408528aa2134b5cd584453a4f',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E9%BC%93%E5%8A%B1%E7%94%9F%E4%B8%89%E5%AD%A9+17%E9%83%A8%E9%97%A8%E8%81%94%E5%90%88%E5%8F%91%E6%96%87&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '鼓励生三孩 17部门联合发文'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '8月16日，中共中央政治局常委、国务院总理李克强在深圳主持召开经济大省政府主要负责人座谈会。总理要求东部4省完成中央财政上缴任务，有何深意？',
+ 'history': [],
+ 'hotScore': 4875422,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/fefe06b88cfab1c9711d9a3bb6fe7e50',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E8%A6%81%E6%B1%824%E7%9C%81%E5%AE%8C%E6%88%90%E8%B4%A2%E6%94%BF%E4%B8%8A%E7%BC%B4%E4%BB%BB%E5%8A%A1%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F%3F&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '要求4省完成财政上缴任务有何深意?'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '据农业农村部消息，今年全国秋粮面积稳中有增，超过13亿亩，大部地区秋粮作物长势好于上年，夺取全年粮食丰收有基础、有支撑、有条件。',
+ 'history': [],
+ 'hotScore': 4719804,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/2aa056b40b37bfdd537887f7da8cc2af',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%85%A8%E5%B9%B4%E7%B2%AE%E9%A3%9F%E5%A4%BA%E5%8F%96%E4%B8%B0%E6%94%B6%E6%9C%89%E6%94%AF%E6%92%91&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '全年粮食夺取丰收有支撑'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '17日国家卫健委发布会上，发改委工作人员介绍：调查显示，婴幼儿无人照料是阻碍生育的首要因素，发展托育对减轻家庭负担、提高生育意愿有显著效果。',
+ 'history': [{'hot_num': 4633440, 'update_time': 1660705217}],
+ 'hotScore': 4633440,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/09bba8b7f65fc92637e4a151b73d009b',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%A9%B4%E5%B9%BC%E5%84%BF%E6%97%A0%E4%BA%BA%E7%85%A7%E6%96%99%E6%98%AF%E9%98%BB%E7%A2%8D%E7%94%9F%E8%82%B2%E9%A6%96%E8%A6%81%E5%9B%A0%E7%B4%A0&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '婴幼儿无人照料是阻碍生育首要因素'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 4529539,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%9B%9B%E5%B7%9D%E4%B9%90%E5%B1%B1%E4%B8%80%E5%85%AC%E7%AB%8B%E5%8C%BB%E9%99%A2%E5%80%92%E9%97%AD&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '四川乐山一公立医院倒闭'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近日，在广东佛山桂城某商场珠宝店内，一女子试戴戒指，趁店员不备，戴着戒指扭头就跑，半小时后被警方抓获。目前，案件正在进一步侦办中。',
+ 'history': [{'hot_num': 4491664, 'update_time': 1660705217}],
+ 'hotScore': 4491664,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/9619fe5037f8f7988f8cb690103951e0',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E5%95%86%E5%9C%BA%E5%86%85%E8%AF%95%E6%88%B4%E6%88%92%E6%8C%87%E6%88%B4%E4%B8%8A%E5%B0%B1%E8%B7%91&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '女子商场内试戴戒指戴上就跑'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近日，湖北孝感有居民反映，一些大爷大妈进超市避暑直接脱鞋躺货架上。超市工作人员称，进行过劝阻，贴了文字提醒，但他们不听劝，也不能赶人。',
+ 'history': [{'hot_num': 4389947, 'update_time': 1660705217}],
+ 'hotScore': 4389947,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/d2761aa48db1a709d74c7cb22a53199d',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%A4%A7%E7%88%B7%E5%A4%A7%E5%A6%88%E8%BF%9B%E8%B6%85%E5%B8%82%E9%81%BF%E6%9A%91%E8%84%B1%E9%9E%8B%E8%BA%BA%E8%B4%A7%E6%9E%B6&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '大爷大妈进超市避暑脱鞋躺货架'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 4207595,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E8%8D%AF%E4%BC%81%E5%8D%96%E4%B8%A4%E5%A5%97%E5%AD%A6%E5%8C%BA%E6%88%BF%E6%8D%A2%E6%9D%A52100%E4%B8%87&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '药企卖两套学区房换来2100万'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '8月16日0-24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增本土确诊病例566例，本土无症状感染者2322例。',
+ 'history': [],
+ 'hotScore': 4160610,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/ccb38406f586348454969db5a3284828',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=31%E7%9C%81%E4%BB%BD%E6%98%A8%E6%97%A5%E6%96%B0%E5%A2%9E%E6%9C%AC%E5%9C%9F%E2%80%9C566%2B2322%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '31省份昨日新增本土“566+2322”'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '中台办发言人16日受权宣布对列入清单的一批“台独”顽固分子等人员实施制裁，其中新列入清单的包括萧美琴等7人。为什么是他们？这些人做过哪些事？',
+ 'history': [],
+ 'hotScore': 4077235,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/113e8cdcd35a99822a1c83e37f33cc10',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E8%B5%B7%E5%BA%95%E6%96%B0%E5%88%97%E5%85%A5%E2%80%9C%E5%8F%B0%E7%8B%AC%E2%80%9D%E6%B8%85%E5%8D%95%E7%9A%847%E4%B8%AA%E4%BA%BA&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '起底新列入“台独”清单的7个人'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近日，有德媒报道称，德空军战机将穿越台湾海峡。而德空军总监格哈茨否认了该计划，并表示飞行高度会超过10公里，会将触及南海，会用国际航线。',
+ 'history': [],
+ 'hotScore': 3930784,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/2899e6f60b3be3df60eb7fc63e104ae3',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%BE%B7%E5%9B%BD%E5%90%A6%E8%AE%A4%E6%88%98%E6%9C%BA%E8%A6%81%E2%80%9C%E7%A9%BF%E8%B6%8A%E5%8F%B0%E6%B9%BE%E6%B5%B7%E5%B3%A1%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '德国否认战机要“穿越台湾海峡”'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 3894567,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%85%B1%E4%BA%AB%E5%8D%95%E8%BD%A6%E6%B6%A8%E4%BB%B7%E2%80%9C%E8%BF%BD%E2%80%9D%E4%B8%8A%E5%85%AC%E4%BA%A4%E8%BD%A6&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '共享单车涨价“追”上公交车'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '14日，河南一女生衣衫不整走入饭店，店主发现后立刻上前帮忙遮挡，并寻找衣物帮她穿上。据当事人蒋女士称，女生约20岁左右，疑有精神障碍。',
+ 'history': [],
+ 'hotScore': 3719446,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/c4fe282ca70e28351334e2bc8403cff0',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%A5%B3%E7%94%9F%E8%A1%A3%E8%A1%AB%E4%B8%8D%E6%95%B4%E8%BF%9B%E9%A4%90%E9%A6%86+%E5%A5%B3%E8%80%81%E6%9D%BF%E5%BF%99%E5%B8%AE%E9%81%AE%E6%8C%A1&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '女生衣衫不整进餐馆 女老板忙帮遮挡'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 3609974,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%9B%9E%E5%BA%94%E2%80%9C%E8%80%81%E8%99%8E%E9%AA%A8%E7%98%A6%E5%A6%82%E6%9F%B4%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '动物园回应“老虎骨瘦如柴”'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '1996年至1999年间，劳荣枝与情人法子英，共同实施抢劫、绑架、故意杀人4起。视频回顾劳荣枝、法子英案件时间线。',
+ 'history': [{'hot_num': 3515073, 'update_time': 1660705217}],
+ 'hotScore': 3515073,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/863869193d62c955f2ec6a502ddcd72f',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%9B%9E%E9%A1%BE%E5%8A%B3%E8%8D%A3%E6%9E%9D%E6%B3%95%E5%AD%90%E8%8B%B1%E6%A1%88%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '回顾劳荣枝法子英案件时间线'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近日，韩国一市民团体举行集会示威，要求停止美韩联合军演，避免朝鲜半岛局势恶化。此后，该市民团体又突击式占领了美韩联合登陆演习的指挥所。',
+ 'history': [],
+ 'hotScore': 3423486,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/4f7a3b90f7074c712636405acce6ed74',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E9%9F%A9%E5%9B%BD%E6%B0%91%E4%BC%97%E5%8D%A0%E9%A2%86%E7%BE%8E%E9%9F%A9%E5%86%9B%E6%BC%94%E6%8C%87%E6%8C%A5%E6%89%80&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '韩国民众占领美韩军演指挥所'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '8月16日，浙江省宁波市中级人民法院公开宣判江西省人大常委会原副主任史文清受贿、非法持有枪支案，被告人史文清以受贿罪判处死刑，缓期二年执行。',
+ 'history': [],
+ 'hotScore': 3342283,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/cba6c4abca0b5517181d8f6bd854999b',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E8%90%BD%E9%A9%AC%E5%89%AF%E9%83%A8%E5%8F%B2%E6%96%87%E6%B8%85%E8%B4%AA1.95%E4%BA%BF%E8%8E%B7%E6%AD%BB%E7%BC%93&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '落马副部史文清贪1.95亿获死缓'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '玲娜贝儿、星黛露等迪士尼网红玩偶，在直播间内“秒杀价”只卖40余元？大V直播带货时被民警上门抓获，捣毁售假窝点3处、制假窝点1处，涉案2500万。',
+ 'history': [],
+ 'hotScore': 3218454,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/65db8544c794a485cdae191bf7157a9f',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E7%8E%B2%E5%A8%9C%E8%B4%9D%E5%84%BF%E5%8D%9642%E5%85%83%E4%B8%BB%E6%92%AD%E7%9B%B4%E6%92%AD%E8%A2%AB%E6%8A%93&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '玲娜贝儿卖42元主播直播被抓'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 3157750,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E6%88%BF%E5%B1%8B%E5%85%AC%E6%91%8A%E8%BE%BE46%EF%BC%85+%E8%BF%9D%E8%83%8C%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '房屋公摊达46％ 违背基本常识'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近年来，盲盒潮玩类产品越发火热，但随之出现的盲盒产品夹杂色情题材、色情造型等问题也频频引发引发一些家长质疑和担心。',
+ 'history': [],
+ 'hotScore': 3061722,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/e869f2f9d611391a841acc4d6cefe63e',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E7%9B%B2%E7%9B%92%E4%BA%A7%E5%93%81%E5%87%BA%E7%8E%B0%E8%89%B2%E6%83%85%E6%93%A6%E8%BE%B9%E7%90%83%E9%80%A0%E5%9E%8B&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '盲盒产品出现色情擦边球造型'}
+2022-08-17 11:00:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '近日，一段重庆嘉陵江都被晒干了的视频在网上流传引发关注。对此，水利部门回应：网传视频露出河道为浅滩，属于正常现象，并非干涸。',
+ 'history': [],
+ 'hotScore': 2956345,
+ 'hotTag': '3',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/1d8a241624d0e9f4fb3c5458bd0b9e23',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%98%89%E9%99%B5%E6%B1%9F%E8%A2%AB%E6%99%92%E6%88%90%E2%80%9C%E5%98%89%E9%99%B5%E5%B7%A5%E2%80%9D%EF%BC%9F%E5%AE%98%E6%96%B9%E5%9B%9E%E5%BA%94&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '嘉陵江被晒成“嘉陵工”？官方回应'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705217,
+ 'desc': '高铁上三岁孩子一直吵闹，一女子要求孩子安静，孩子家长称：管不了。',
+ 'history': [],
+ 'hotScore': 2846184,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/9470f11fdddfdb6cca3fe6b0002153ec',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%AD%A9%E5%AD%90%E9%AB%98%E9%93%81%E4%B8%8A%E5%90%B5%E9%97%B9+%E4%B9%98%E5%AE%A2%E6%8F%90%E9%86%92%E8%A2%AB%E5%AE%B6%E9%95%BF%E6%80%BC&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '孩子高铁上吵闹 乘客提醒被家长怼'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [{'hot_num': 2783574, 'update_time': 1660705218}],
+ 'hotScore': 2783574,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=iPhone14%E5%B0%86%E4%B8%8E%E5%8D%8E%E4%B8%BAMate50%E5%90%8C%E6%9C%9F%E5%8F%91%E5%B8%83&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': 'iPhone14将与华为Mate50同期发布'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '据记者8月15日报道，当地时间8月10日，土耳其一名2岁女童被一条50厘米长的蛇袭击，随后这名女童反将蛇咬死。',
+ 'history': [],
+ 'hotScore': 2691829,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/35c85be69e45d36da2abc36d6c4ac7cf',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E5%9C%9F%E8%80%B3%E5%85%B62%E5%B2%81%E5%A5%B3%E7%AB%A5%E9%81%AD%E8%9B%87%E5%92%AC%E5%90%8E%E5%92%AC%E6%AD%BB%E8%9B%87&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '土耳其2岁女童遭蛇咬后咬死蛇'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 2590439,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=12%E5%B2%81%E7%94%B7%E5%AD%A9%E7%8E%A9%E6%89%8B%E6%B8%B8%E8%8A%B1%E5%85%89%E7%88%B6%E4%BA%B2%E5%8C%BB%E7%96%97%E8%B4%B9&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '12岁男孩玩手游花光父亲医疗费'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 2486988,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E7%94%B5%E5%B7%A5%E6%8E%A9%E6%8A%A4%E7%BD%91%E5%90%A74%E5%B9%B4%E5%81%B7%E7%94%B5102%E4%B8%87%E5%BA%A6&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '电工掩护网吧4年偷电102万度'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 2381235,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E6%B7%B1%E5%A4%9C%E5%87%BA%E5%87%BB%EF%BC%8C%E7%A9%BA%E6%88%98%E5%AF%B9%E6%8A%97%E9%9A%BE%E8%A7%A3%E9%9A%BE%E5%88%86&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '深夜出击，空战对抗难解难分'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 2286802,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E4%B9%8C%E5%85%8B%E5%85%B0%E7%B2%AE%E9%A3%9F%E7%8E%B0%E8%BA%AB%E6%96%AD%E4%BA%A4%E5%9B%BD%E6%B8%AF%E5%8F%A3&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '乌克兰粮食现身断交国港口'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '近日，不少大学迎来了开学季。据悉，来自西南交通大学的研究生再过10天就要开学，但目前至少二百名全日制硕博新生在开学时面临着无宿舍可住的烦恼。',
+ 'history': [],
+ 'hotScore': 2122944,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/hotboard_img/37c6d01528f16f9fc5d62db3eb594bb0',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E8%A5%BF%E5%8D%97%E4%BA%A4%E5%A4%A7%E4%B8%8A%E7%99%BE%E7%A0%94%E7%A9%B6%E7%94%9F%E6%96%B0%E7%94%9F%E9%9C%80%E6%A0%A1%E5%A4%96%E7%A7%9F%E6%88%BF&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '西南交大上百研究生新生需校外租房'}
+2022-08-17 11:00:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://top.baidu.com/board?tab=realtime>
+{'add_time': 1660705218,
+ 'desc': '',
+ 'history': [],
+ 'hotScore': 2084892,
+ 'hotTag': '0',
+ 'img': 'https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg',
+ 'is_local': 0,
+ 'url': 'https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E5%95%83%E9%B8%AD%E8%85%BF%E5%8F%91%E7%8E%B0%E6%98%AF%E6%9C%A8%E6%A3%8D%E6%8B%BC%E9%AA%A8&sa=fyb_news&rsv_dl=fyb_news',
+ 'word': '男子啃鸭腿发现是木棍拼骨'}
+2022-08-17 11:00:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-17 11:00:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 345,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 142115,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.706912,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 17, 3, 0, 18, 298873),
+ 'item_scraped_count': 31,
+ 'log_count/DEBUG': 32,
+ 'log_count/INFO': 10,
+ 'memusage/max': 70115328,
+ 'memusage/startup': 70115328,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 8, 17, 3, 0, 15, 591961)}
+2022-08-17 11:00:18 [scrapy.core.engine] INFO: Spider closed (finished)

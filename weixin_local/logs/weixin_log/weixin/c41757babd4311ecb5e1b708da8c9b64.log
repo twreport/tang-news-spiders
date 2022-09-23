@@ -1,0 +1,72 @@
+2022-06-06 14:18:51 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: weixin_log)
+2022-06-06 14:18:51 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-06-06 14:18:51 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-06-06 14:18:51 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'weixin_log',
+ 'LOG_FILE': 'logs/weixin_log/weixin/c41757babd4311ecb5e1b708da8c9b64.log',
+ 'NEWSPIDER_MODULE': 'weixin_log.spiders',
+ 'SPIDER_MODULES': ['weixin_log.spiders']}
+2022-06-06 14:18:52 [scrapy.extensions.telnet] INFO: Telnet Password: 576e3c235acc8266
+2022-06-06 14:18:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-06 14:18:52 [root] WARNING: ==============Spider Info=================
+2022-06-06 14:18:52 [root] WARNING: area
+2022-06-06 14:18:52 [root] WARNING: 6258f2fafacaad2eb8037c60
+2022-06-06 14:18:52 [root] WARNING: ==============Spider Info End=============
+2022-06-06 14:18:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-06 14:18:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-06 14:18:52 [scrapy.middleware] INFO: Enabled item pipelines:
+['weixin_log.pipelines.MongodbPipeline']
+2022-06-06 14:18:52 [scrapy.core.engine] INFO: Spider opened
+2022-06-06 14:18:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-06 14:18:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-06 14:18:52 [root] WARNING: item in mongodb:
+2022-06-06 14:18:52 [root] WARNING: {'_id': ObjectId('6258f2fafacaad2eb8037c60'), 'title': '报名中！毕节一单位招4人', 'url': 'https://mp.weixin.qq.com/s?__biz=MzIzOTA1ODI0Mg==&mid=2652857974&idx=1&sn=791e4174a622fa35cfedd12ad0d9a9d1&chksm=f2c42a5bc5b3a34de47cbc75c40823123ad1f64ebd38acd3a798aa8fd9ba269da3d107f73fef&scene=27', 'key_words': '', 'locations': '', 'text': '\n金沙县怀丰房地产开发有限公司招聘项目管理员4名详情如下↓↓↓一、职位表二、招聘程序1.报名时间：4月13日至4月15日(上午8:30-12:00；下午2:30-17:30；节假日除外);2.报名地点：金沙县怀丰房地产开发有限公司（办公室）；3.报名方式：现场报名；4.报名要求：(1)报考人员须如实填写报名信息，每人只能报考一个岗位，凡提供虚假报考申请材料的，一经查实,即取消报考资格；(2)报名需提交的材料:《金沙县怀丰房地产开发有限公司项目管理员招聘报名登记表》(附件1报名表须本人亲笔填写)、应聘承诺书(附件2)、本人户口簿、有效期内的第二代居民身份证、学历(学位)证书、职称证书和其他资格证书等证件及近期一寸彩色免冠照片3张，其他有关证件材料均须提交原件及复印件1份，经审核后留下复印件，原件当场退还报名人员。5.资格审核资格审核工作贯穿招考全过程，报名现场进行资格初审后，报名材料被接收并在领取准考证前未被告知不符合报考条件的考生即视为报名成功。考生现场成功递交报名材料后，应随时保持联系手机畅通，因所留手机号码有误或联系不畅而造成的后果，由考生自负。6.面试(1)面试时间：2022年4月19日上午09:00；(2)面试地点：金沙县怀丰房地产开发有限公司会议室；面谈测评测试采取现场询问或测试方式进行,全面了解应聘人员的能力素质、形象气质、语言表达、沟通协调、综合判断、业务知识等方面情况。全面考察应聘者的综合素质及专业能力。面谈测评和相应测试采用百分制。根据得分由高到低确定进入下一环节人员。若应聘岗位人数比例为\u20021∶1(或只有一名应聘者)。综合得分不得低于70分。面谈测评时间和地点另行通知。7.面试成绩如同一岗位面试成绩相同的，则按成绩高低顺序确定名次。面试成绩成绩在金沙县人民政府网政务公开栏公布。详细信息点击“阅读原文”查看公示！毕节4个学雷锋志愿服务先进典型上榜贵州瓮安一批进口大米核酸检测阳性来源：金沙县人民政府网编辑：杨婷婷\xa0 \xa0 \xa0责编：张媛媛编审：谭\xa0 \xa0虎\xa0\xa0 \xa0 监制：孟性荣\n', 'issue_date': '2022-04-14 13:18:21', 'add_time': 1649996538, 'status': 0, 'biz': 'MzIzOTA1ODI0Mg==', 'uin': 'MzY1Nzg5NzAxMQ%3D%3D', 'name': '看见毕节'}
+2022-06-06 14:18:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://mp.weixin.qq.com/mp/getappmsgext?wx_header=1> (referer: None)
+2022-06-06 14:18:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://mp.weixin.qq.com/mp/getappmsgext?wx_header=1>
+{'check_time': 1654496332, 'read_num': 3735}
+2022-06-06 14:18:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-06 14:18:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 852,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 687,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.576085,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 6, 6, 18, 52, 801687),
+ 'httpcompression/response_bytes': 901,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 6,
+ 'memusage/max': 68464640,
+ 'memusage/startup': 68464640,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 6, 6, 6, 18, 52, 225602)}
+2022-06-06 14:18:52 [scrapy.core.engine] INFO: Spider closed (finished)

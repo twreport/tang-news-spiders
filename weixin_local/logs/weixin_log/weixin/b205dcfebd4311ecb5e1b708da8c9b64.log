@@ -1,0 +1,72 @@
+2022-06-06 14:18:46 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: weixin_log)
+2022-06-06 14:18:46 [scrapy.utils.log] INFO: Versions: lxml 4.7.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.12 | packaged by conda-forge | (default, Oct 12 2021, 23:40:23) - [GCC 9.4.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Linux-5.4.0-1060-raspi-aarch64-with-glibc2.17
+2022-06-06 14:18:46 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-06-06 14:18:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'weixin_log',
+ 'LOG_FILE': 'logs/weixin_log/weixin/b205dcfebd4311ecb5e1b708da8c9b64.log',
+ 'NEWSPIDER_MODULE': 'weixin_log.spiders',
+ 'SPIDER_MODULES': ['weixin_log.spiders']}
+2022-06-06 14:18:47 [scrapy.extensions.telnet] INFO: Telnet Password: 8c1558a100df2a21
+2022-06-06 14:18:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-06-06 14:18:47 [root] WARNING: ==============Spider Info=================
+2022-06-06 14:18:47 [root] WARNING: province
+2022-06-06 14:18:47 [root] WARNING: 62590969bc2b904da58acc07
+2022-06-06 14:18:47 [root] WARNING: ==============Spider Info End=============
+2022-06-06 14:18:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-06-06 14:18:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-06-06 14:18:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['weixin_log.pipelines.MongodbPipeline']
+2022-06-06 14:18:47 [scrapy.core.engine] INFO: Spider opened
+2022-06-06 14:18:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-06-06 14:18:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-06-06 14:18:47 [root] WARNING: item in mongodb:
+2022-06-06 14:18:47 [root] WARNING: {'_id': ObjectId('62590969bc2b904da58acc07'), 'title': '关于松桃县新增1例阳性情况通报', 'url': 'https://mp.weixin.qq.com/s?__biz=MzIzNDYxNTcxOA==&mid=2247652711&idx=1&sn=bbe354823ecc075b0854351f067f5e46&chksm=e8ff73aedf88fab85ffd6a8cb6f430909d617b341c5097328e08a0e7ec71ec6f1430436975fb&scene=27', 'key_words': '', 'locations': '', 'text': '\n关于铜仁市松桃县新增1例省外返黔闭环管理人员阳性调查处置情况的通报2022年4月13日，接铜仁市卫生健康局报告，1名已闭环管控的上海返黔人员新冠病毒核酸检测结果异常。接到报告后，党委政府高度重视，果断采取处置措施。目前，流调溯源、核酸筛查、隔离观察、区域管控、环境消杀、物资保障等应急处置工作正在有序开展。无症状感染者1：男，35岁，户籍地为铜仁市松桃县黄板镇小湾村，系上海市返黔人员。4月10日乘车从上海市返黔，当日23时49分抵达松桃高速收费南站，出站后抵达疫情服务卡点，工作人员检查其行程码发现有上海旅居史，4月11日凌晨立即按规定将其管控并闭环转运至集中隔离点。4月11日、4月12日核酸检测结果均为阴性。4月13日下午其核酸检测结果异常，当晚经铜仁市疾控中心复核，结果为阳性。4月14日02:06，经省级专家组会诊，诊断为新冠肺炎无症状感染者，现已全程闭环转运至省将军山医院。近期，国内疫情呈多点散发态势，疫情防控形势严峻复杂。为落实科学防控、精准防控要求，确保人民群众生命安全和身体健康，请广大群众持续关注官方消息，不信谣、不传谣，严格做好个人防护，坚持戴口罩、勤洗手、多通风、不聚集等防护措施，密切关注疫情形势，积极配合疫情防控，与上述人员行程轨迹有交集的群众，立即静待家中并主动向所在社区工作人员报备。对瞒报、谎报、漏报以及拒不配合执行防控政策的人员，将依法追究相关法律责任。铜仁市应对新冠病毒\xa0 \xa0\xa0感染的肺炎疫情防控\xa0 \xa0\xa0领导小组办公室\xa0 \xa0\xa02022年4月14日\xa0 \xa0\xa0推荐阅读\xa0 \xa0 \xa0●习近平：把所有的精力都用在让老百姓过好日子上\xa0 \xa0 \xa0●谌贻琴到威宁县调研\xa0 \xa0 \xa0●贵阳市选举产生出席省第十三次党代会代表（附56人名单）来源：健康贵州统筹：张烈烈编审：代芹涟微编：黄\xa0 \xa0勇“贵州改革”微信2022年第310期（总第2150期）▌2022年4月14日\n', 'issue_date': '2022-04-14 06:40:32', 'add_time': 1650002281, 'status': 0, 'biz': 'MzIzNDYxNTcxOA==', 'uin': 'MzY1Nzg5NzAxMQ%3D%3D', 'name': '贵州改革'}
+2022-06-06 14:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://mp.weixin.qq.com/mp/getappmsgext?wx_header=1> (referer: None)
+2022-06-06 14:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://mp.weixin.qq.com/mp/getappmsgext?wx_header=1>
+{'check_time': 1654496328, 'read_num': 100001}
+2022-06-06 14:18:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-06-06 14:18:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 959,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 692,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.956279,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 6, 6, 6, 18, 48, 205961),
+ 'httpcompression/response_bytes': 907,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 6,
+ 'memusage/max': 68595712,
+ 'memusage/startup': 68595712,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 6, 6, 6, 18, 47, 249682)}
+2022-06-06 14:18:48 [scrapy.core.engine] INFO: Spider closed (finished)
